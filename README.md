@@ -1,6 +1,6 @@
 # Great Learning — AIML Course Materials
 
-Jupyter notebooks, datasets, and project files from the **Artificial Intelligence and Machine Learning** program. Content is organized by learning phase: pre-work, Python foundations, classical machine learning, and applied AI / computer vision.
+Jupyter notebooks, datasets, and project files from the **Artificial Intelligence and Machine Learning** program. Content is organized by learning phase: pre-work, Python foundations, classical machine learning, advanced machine learning, and applied AI / computer vision.
 
 Use this README to understand what each folder contains and to quickly locate notebooks by **topic**, **algorithm**, or **library**.
 
@@ -13,6 +13,7 @@ AIML/
 ├── Pre-Work/                    # Python basics + applied AI case studies
 ├── Python Foundations/          # NumPy, Pandas, EDA, visualization, case studies
 ├── Machine Learning/            # Regression, decision trees, clustering, capstone
+├── Advanced Machine Learning/   # Ensemble methods, model tuning, advanced case studies
 └── Computer Vision/             # Deep learning for image classification
 ```
 
@@ -31,19 +32,23 @@ AIML/
 | **Matplotlib & Seaborn** | [Python Foundations/Exploratory Data Analysis/Python_Visualization_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Python%20Foundations/Exploratory%20Data%20Analysis/Python_Visualization_Notebook.ipynb), [Python Foundations/PythonVisualization_Additional/PythonVisualization_Additional_Learning_Material.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Python%20Foundations/PythonVisualization_Additional/PythonVisualization_Additional_Learning_Material.ipynb) |
 | **Plotly** | `Python Foundations/PythonVisualization_Additional/...`, `Machine Learning/K-Means Clustering Examples/*/` (interactive cluster plots) |
 | **Exploratory Data Analysis (EDA)** | [Python Foundations/Exploratory Data Analysis/Hands_on_Exploratory_Data_Analysis_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Python%20Foundations/Exploratory%20Data%20Analysis/Hands_on_Exploratory_Data_Analysis_Notebook.ipynb) |
-| **Statsmodels & SciPy** (regression diagnostics, VIF) | [Machine Learning/Liner Regression Examples/Car's mileage/LinearRegressionAssumptions_HandsOn.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Car%27s%20mileage/LinearRegressionAssumptions_HandsOn.ipynb) |
-| **Linear Regression** | [Machine Learning/Liner Regression Examples/Mobiles and tablets/Hands_on_Linear_Regression_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Mobiles%20and%20tablets/Hands_on_Linear_Regression_Notebook.ipynb), [.../Used Car Price Predition/ML_MLS1_Cars4u_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Used%20Car%20Price%20Predition/ML_MLS1_Cars4u_Notebook.ipynb) |
-| **Logistic Regression** | [Machine Learning/Liner Regression Examples/Pima Indians Diabetes/Logistic Regression - Hands On-1.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Pima%20Indians%20Diabetes/Logistic%20Regression%20-%20Hands%20On-1.ipynb), [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression) - Cursor](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%29%20-%20Cursor.ipynb), [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression + Zip Code Included)](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%20%2B%20Zip%20Code%20Included%29.ipynb) |
-| **Decision Trees** | [Machine Learning/Decision Tree Examples/Credit scoring/Hands_on_Decision_Tree_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Credit%20scoring/Hands_on_Decision_Tree_Notebook.ipynb), [.../Machine Failure Prediction/MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Machine%20Failure%20Prediction/MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb), [AIML_ML_Project_Full_Code_Notebook (Completed)](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Completed%29.ipynb), [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression) - Cursor](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%29%20-%20Cursor.ipynb), [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression + Zip Code Included)](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%20%2B%20Zip%20Code%20Included%29.ipynb) |
-| **GridSearchCV & hyperparameter tuning** | [Machine Learning/Decision Tree Examples/Credit scoring/Hands_on_Decision_Tree_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Credit%20scoring/Hands_on_Decision_Tree_Notebook.ipynb), `Pre-Work/Hotel Booking Cancellation Prediction/...` |
-| **Random Forest** | [Pre-Work/Hotel Booking Cancellation Prediction/AI_Application_Case_Study_Hotel_Booking_Cancellation_Prediction_v2_0.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Hotel%20Booking%20Cancellation%20Prediction/AI_Application_Case_Study_Hotel_Booking_Cancellation_Prediction_v2_0.ipynb) |
+| **Statsmodels & SciPy** (regression diagnostics, VIF) | [Machine Learning/Linear Regression Examples/Car's mileage/LinearRegressionAssumptions_HandsOn.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Car%27s%20mileage/LinearRegressionAssumptions_HandsOn.ipynb) |
+| **Linear Regression** | [Machine Learning/Linear Regression Examples/Mobiles and tablets/Hands_on_Linear_Regression_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Mobiles%20and%20tablets/Hands_on_Linear_Regression_Notebook.ipynb), [.../Used Car Price Predition/ML_MLS1_Cars4u_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Used%20Car%20Price%20Predition/ML_MLS1_Cars4u_Notebook.ipynb), [.../Case Study - Anime Ratings/SL_MLS1_Anime_Rating_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Case%20Study%20-%20Anime%20Ratings/SL_MLS1_Anime_Rating_Prediction_Notebook.ipynb) |
+| **Logistic Regression** | [Machine Learning/Linear Regression Examples/Pima Indians Diabetes/Logistic Regression - Hands On-1.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Pima%20Indians%20Diabetes/Logistic%20Regression%20-%20Hands%20On-1.ipynb), [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression) - Cursor](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%29%20-%20Cursor.ipynb), [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression + Zip Code Included)](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%20%2B%20Zip%20Code%20Included%29.ipynb) |
+| **Decision Trees** | [Machine Learning/Decision Tree Examples/Credit scoring/Hands_on_Decision_Tree_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Credit%20scoring/Hands_on_Decision_Tree_Notebook.ipynb), [.../Machine Failure Prediction/MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Machine%20Failure%20Prediction/MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb), [AllLife Bank capstone notebooks](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Completed%29.ipynb) |
+| **GridSearchCV & hyperparameter tuning** | [Machine Learning/Decision Tree Examples/Credit scoring/Hands_on_Decision_Tree_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Credit%20scoring/Hands_on_Decision_Tree_Notebook.ipynb), [Advanced Machine Learning/Model Tuning/Hyperparameter_tuning_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Model%20Tuning/Hyperparameter_tuning_Notebook.ipynb) |
+| **Cross-validation (K-fold)** | [Advanced Machine Learning/Model Tuning/K_fold_cross_validation_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Model%20Tuning/K_fold_cross_validation_Notebook.ipynb) |
+| **Oversampling / Undersampling (SMOTE)** | [Advanced Machine Learning/Model Tuning/Oversampling_and_undersampling_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Model%20Tuning/Oversampling_and_undersampling_Notebook.ipynb) |
+| **Bagging / Random Forest** | [Advanced Machine Learning/Bagging/Ensemble_Hands-On_Bagging-2.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Bagging/Ensemble_Hands-On_Bagging-2.ipynb), [Pre-Work/Hotel Booking Cancellation Prediction/AI_Application_Case_Study_Hotel_Booking_Cancellation_Prediction_v2_0.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Hotel%20Booking%20Cancellation%20Prediction/AI_Application_Case_Study_Hotel_Booking_Cancellation_Prediction_v2_0.ipynb) |
+| **Boosting (AdaBoost, Gradient Boosting, XGBoost)** | [Advanced Machine Learning/Boosting/Ensemble_Hands_On_Boosting_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Boosting/Ensemble_Hands_On_Boosting_Notebook.ipynb) |
 | **K-Means Clustering** | [Machine Learning/K-Means Clustering Examples/Customer segmentation/Hands_on_K_Means_Clustering_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/K-Means%20Clustering%20Examples/Customer%20segmentation/Hands_on_K_Means_Clustering_Notebook.ipynb) and related case-study notebooks |
 | **t-SNE & Silhouette Score** | All notebooks under `Machine Learning/K-Means Clustering Examples/` |
+| **Sentiment analysis / NLP** | [Pre-Work/Airline Customer Sentiment Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Airline%20Customer%20Sentiment%20Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb) |
 | **TensorFlow / Keras** (CNN, image data) | [Pre-Work/COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb), [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) |
 | **OpenCV (`cv2`)** | COVID detection notebooks (image preprocessing) |
 | **Gradio** (model deployment UI) | COVID detection notebooks |
 | **OpenAI API** | [Pre-Work/openai_api_demo.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/openai_api_demo.ipynb) |
-| **Scikit-learn (general)** | Most notebooks under `Machine Learning/` and applied AI notebooks in `Pre-Work/` |
+| **Scikit-learn (general)** | Most notebooks under `Machine Learning/`, `Advanced Machine Learning/`, and applied AI notebooks in `Pre-Work/` |
 
 ---
 
@@ -51,15 +56,21 @@ AIML/
 
 | Algorithm | Notebook(s) | Dataset / case |
 |---|---|---|
-| Linear Regression | [Machine Learning/Liner Regression Examples/Mobiles and tablets/Hands_on_Linear_Regression_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Mobiles%20and%20tablets/Hands_on_Linear_Regression_Notebook.ipynb) | Mobile & tablet sales |
-| Linear Regression | [Machine Learning/Liner Regression Examples/Used Car Price Predition/ML_MLS1_Cars4u_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Used%20Car%20Price%20Predition/ML_MLS1_Cars4u_Notebook.ipynb) | Used car prices |
-| Linear Regression (assumptions) | [Machine Learning/Liner Regression Examples/Car's mileage/LinearRegressionAssumptions_HandsOn.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Car%27s%20mileage/LinearRegressionAssumptions_HandsOn.ipynb) | Auto MPG |
-| Logistic Regression | [Machine Learning/Liner Regression Examples/Pima Indians Diabetes/Logistic Regression - Hands On-1.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Pima%20Indians%20Diabetes/Logistic%20Regression%20-%20Hands%20On-1.ipynb) | Pima Indians diabetes |
+| Linear Regression | [Machine Learning/Linear Regression Examples/Mobiles and tablets/Hands_on_Linear_Regression_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Mobiles%20and%20tablets/Hands_on_Linear_Regression_Notebook.ipynb) | Mobile & tablet sales |
+| Linear Regression | [Machine Learning/Linear Regression Examples/Used Car Price Predition/ML_MLS1_Cars4u_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Used%20Car%20Price%20Predition/ML_MLS1_Cars4u_Notebook.ipynb) | Used car prices |
+| Linear Regression (assumptions) | [Machine Learning/Linear Regression Examples/Car's mileage/LinearRegressionAssumptions_HandsOn.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Car%27s%20mileage/LinearRegressionAssumptions_HandsOn.ipynb) | Auto MPG |
+| Linear Regression (practice) | [Machine Learning/Linear Regression Examples/Practice Exercise - Housing prices/SLR_W1_PracticeExercise_Solution.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Practice%20Exercise%20-%20Housing%20prices/SLR_W1_PracticeExercise_Solution.ipynb) | Boston housing prices |
+| Linear Regression (practice + assumptions) | [Machine Learning/Linear Regression Examples/Parctice Exercise - Housing prices (Assumptions and Statistical Inference)/SLF_W2_PracticeExercise_Solution.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Parctice%20Exercise%20-%20Housing%20prices%20%28Assumptions%20and%20Statistical%20Inference%29/SLF_W2_PracticeExercise_Solution.ipynb) | Boston housing prices |
+| Linear Regression | [Machine Learning/Linear Regression Examples/Case Study - Anime Ratings/SL_MLS1_Anime_Rating_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Case%20Study%20-%20Anime%20Ratings/SL_MLS1_Anime_Rating_Prediction_Notebook.ipynb) | Anime ratings |
+| Logistic Regression | [Machine Learning/Linear Regression Examples/Pima Indians Diabetes/Logistic Regression - Hands On-1.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Pima%20Indians%20Diabetes/Logistic%20Regression%20-%20Hands%20On-1.ipynb) | Pima Indians diabetes |
 | Decision Tree | [Machine Learning/Decision Tree Examples/Credit scoring/Hands_on_Decision_Tree_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Credit%20scoring/Hands_on_Decision_Tree_Notebook.ipynb) | Credit card approval |
 | Decision Tree | [Machine Learning/Decision Tree Examples/Machine Failure Prediction/MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Machine%20Failure%20Prediction/MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb) | Machine failure |
+| Decision Tree | [Machine Learning/Decision Tree Examples/Case Study - Loan Delinquent Analysis/W2_Additional_CaseStudy_Loan_Delinquent_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Case%20Study%20-%20Loan%20Delinquent%20Analysis/W2_Additional_CaseStudy_Loan_Delinquent_Notebook.ipynb) | Loan delinquency |
 | Decision Tree (capstone) | [AIML_ML_Project_Full_Code_Notebook (Completed)](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Completed%29.ipynb) | AllLife Bank personal loan conversion |
 | Decision Tree + Logistic Regression (capstone) | [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression) - Cursor](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%29%20-%20Cursor.ipynb), [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression) - Gemini](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%29%20-%20Gemini.ipynb) | AllLife Bank personal loan conversion (decision tree vs logistic regression comparison) |
 | Decision Tree + Logistic Regression + ZIP analysis (capstone) | [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression + Zip Code Included)](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%20%2B%20Zip%20Code%20Included%29.ipynb) | AllLife Bank personal loan conversion with `ZIP_Prefix` feature engineering and regional EDA |
+| Bagging (Random Forest) | [Advanced Machine Learning/Bagging/Ensemble_Hands-On_Bagging-2.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Bagging/Ensemble_Hands-On_Bagging-2.ipynb) | Credit risk |
+| Boosting (AdaBoost / Gradient Boosting) | [Advanced Machine Learning/Boosting/Ensemble_Hands_On_Boosting_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Boosting/Ensemble_Hands_On_Boosting_Notebook.ipynb) | Credit risk |
 | K-Means | [Machine Learning/K-Means Clustering Examples/Customer segmentation/Hands_on_K_Means_Clustering_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/K-Means%20Clustering%20Examples/Customer%20segmentation/Hands_on_K_Means_Clustering_Notebook.ipynb) | Retail customers |
 | K-Means | [Machine Learning/K-Means Clustering Examples/Adidas and Nike/ML_W3_Additional_Case_Study_Product_Segmentation_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/K-Means%20Clustering%20Examples/Adidas%20and%20Nike/ML_W3_Additional_Case_Study_Product_Segmentation_Notebook.ipynb) | Adidas vs Nike products |
 | K-Means | [Machine Learning/K-Means Clustering Examples/Credit Card Customer Segmentation/ML_MLS3_Credit_Card_Customer_Segmentation_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/K-Means%20Clustering%20Examples/Credit%20Card%20Customer%20Segmentation/ML_MLS3_Credit_Card_Customer_Segmentation_Notebook.ipynb) | Credit card customers |
@@ -75,7 +86,8 @@ AIML/
 1. **Pre-Work** — Python fundamentals and first applied AI exposure  
 2. **Python Foundations** — NumPy, Pandas, visualization, and EDA case studies  
 3. **Machine Learning** — supervised learning (regression, trees) then unsupervised (K-Means)  
-4. **Computer Vision** — deep learning for image classification  
+4. **Advanced Machine Learning** — ensemble methods (bagging, boosting), model tuning, and advanced case studies  
+5. **Computer Vision** — deep learning for image classification  
 
 ---
 
@@ -90,6 +102,7 @@ AIML/
 | [openai_api_demo.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/openai_api_demo.ipynb) | Calling the OpenAI API | `openai` |
 | [COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb) | CNN training, evaluation, Gradio deployment | TensorFlow/Keras, OpenCV, scikit-learn |
 | [Hotel Booking Cancellation Prediction/AI_Application_Case_Study_Hotel_Booking_Cancellation_Prediction_v2_0.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Hotel%20Booking%20Cancellation%20Prediction/AI_Application_Case_Study_Hotel_Booking_Cancellation_Prediction_v2_0.ipynb) | End-to-end ML pipeline with tree-based models | pandas, scikit-learn, statsmodels |
+| [Airline Customer Sentiment Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Airline%20Customer%20Sentiment%20Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb) | Sentiment analysis on airline customer reviews | pandas, scikit-learn, NLP libraries |
 
 **Note:** COVID notebooks require extracting `X-ray Data.zip`. A pre-trained Keras model (`tuned_ai_model_best_lat.keras`) is included in Pre-Work.
 
@@ -138,16 +151,17 @@ AIML/
 
 ### Machine Learning
 
-> Folder name uses **"Liner Regression"** (as in the course materials).
-
-#### Linear & Logistic Regression (`Liner Regression Examples/`)
+#### Linear & Logistic Regression (`Linear Regression Examples/`)
 
 | Case study | Notebook | Algorithm |
 |---|---|---|
-| Mobiles and tablets | [Hands_on_Linear_Regression_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Mobiles%20and%20tablets/Hands_on_Linear_Regression_Notebook.ipynb) | Linear Regression |
-| Used Car Price Prediction (Cars4u) | [ML_MLS1_Cars4u_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Used%20Car%20Price%20Predition/ML_MLS1_Cars4u_Notebook.ipynb) | Linear Regression |
-| Car's mileage | [LinearRegressionAssumptions_HandsOn.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Car%27s%20mileage/LinearRegressionAssumptions_HandsOn.ipynb) | Linear Regression + assumption checks |
-| Pima Indians Diabetes | [Logistic Regression - Hands On-1.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Liner%20Regression%20Examples/Pima%20Indians%20Diabetes/Logistic%20Regression%20-%20Hands%20On-1.ipynb) | Logistic Regression |
+| Mobiles and tablets | [Hands_on_Linear_Regression_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Mobiles%20and%20tablets/Hands_on_Linear_Regression_Notebook.ipynb) | Linear Regression |
+| Used Car Price Prediction (Cars4u) | [ML_MLS1_Cars4u_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Used%20Car%20Price%20Predition/ML_MLS1_Cars4u_Notebook.ipynb) | Linear Regression |
+| Car's mileage | [LinearRegressionAssumptions_HandsOn.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Car%27s%20mileage/LinearRegressionAssumptions_HandsOn.ipynb) | Linear Regression + assumption checks |
+| Pima Indians Diabetes | [Logistic Regression - Hands On-1.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Pima%20Indians%20Diabetes/Logistic%20Regression%20-%20Hands%20On-1.ipynb) | Logistic Regression |
+| Anime Rating Prediction | [SL_MLS1_Anime_Rating_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Case%20Study%20-%20Anime%20Ratings/SL_MLS1_Anime_Rating_Prediction_Notebook.ipynb) | Linear Regression |
+| Housing prices (practice) | [SLR_W1_PracticeExercise_Solution.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Practice%20Exercise%20-%20Housing%20prices/SLR_W1_PracticeExercise_Solution.ipynb) | Linear Regression |
+| Housing prices (assumptions practice) | [SLF_W2_PracticeExercise_Solution.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Linear%20Regression%20Examples/Parctice%20Exercise%20-%20Housing%20prices%20%28Assumptions%20and%20Statistical%20Inference%29/SLF_W2_PracticeExercise_Solution.ipynb) | Linear Regression + statistical inference |
 
 #### Decision Trees (`Decision Tree Examples/`)
 
@@ -155,6 +169,7 @@ AIML/
 |---|---|---|
 | Credit scoring | [Hands_on_Decision_Tree_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Credit%20scoring/Hands_on_Decision_Tree_Notebook.ipynb) | `GridSearchCV`, pruning |
 | Machine failure prediction | [MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Machine%20Failure%20Prediction/MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb) | Classification tree |
+| Loan delinquency analysis | [W2_Additional_CaseStudy_Loan_Delinquent_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/Decision%20Tree%20Examples/Case%20Study%20-%20Loan%20Delinquent%20Analysis/W2_Additional_CaseStudy_Loan_Delinquent_Notebook.ipynb) | Additional case study |
 | AllLife Bank (capstone) | [AIML_ML_Project_Full_Code_Notebook (Completed)](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Completed%29.ipynb) | Completed decision-tree solution with problem statement, data dictionary, pre/post-pruning, and business recommendations |
 | AllLife Bank (capstone — DT vs LR) | [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression) - Cursor](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%29%20-%20Cursor.ipynb), [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression) - Gemini](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%29%20-%20Gemini.ipynb) | Extended solutions comparing decision trees and logistic regression, with final model selection |
 | AllLife Bank (capstone — DT vs LR + ZIP) | [AIML_ML_Project_Full_Code_Notebook (Desicion Tree vs Logistic Regression + Zip Code Included)](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/AllLifeBank/AIML_ML_Project_Full_Code_Notebook%20%28Desicion%20Tree%20vs%20Logistic%20Regression%20%2B%20Zip%20Code%20Included%29.ipynb) | Extended DT vs LR comparison with ZIP code EDA, `ZIP_Prefix` feature engineering, and regional loan-acceptance analysis |
@@ -186,6 +201,39 @@ AllLife Bank personal loan conversion — predict which liability customers will
 
 ---
 
+### Advanced Machine Learning
+
+#### Ensemble Methods — Bagging (`Bagging/`)
+
+| Notebook | Highlights |
+|---|---|
+| [Ensemble_Hands-On_Bagging-2.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Bagging/Ensemble_Hands-On_Bagging-2.ipynb) | Bagging classifier and Random Forest on a credit dataset; compares individual tree vs. ensemble accuracy |
+
+#### Ensemble Methods — Boosting (`Boosting/`)
+
+| Notebook | Highlights |
+|---|---|
+| [Ensemble_Hands_On_Boosting_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Boosting/Ensemble_Hands_On_Boosting_Notebook.ipynb) | AdaBoost and Gradient Boosting on a credit dataset; covers `n_estimators`, learning rate tuning, and feature importance |
+
+#### Model Tuning (`Model Tuning/`)
+
+| Notebook | Topic |
+|---|---|
+| [Hyperparameter_tuning_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Model%20Tuning/Hyperparameter_tuning_Notebook.ipynb) | `GridSearchCV` and `RandomizedSearchCV` for hyperparameter optimization |
+| [K_fold_cross_validation_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Model%20Tuning/K_fold_cross_validation_Notebook.ipynb) | K-fold and stratified cross-validation; cross_val_score workflows |
+| [Oversampling_and_undersampling_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Model%20Tuning/Oversampling_and_undersampling_Notebook.ipynb) | Handling class imbalance with SMOTE, random oversampling, and undersampling |
+
+#### Advanced Case Studies
+
+| Folder | Notebook | Domain | Algorithm |
+|---|---|---|---|
+| `Case Study - Bike Sharing/` | [Case_Study_Bike_Sharing_Notebook_(1) (1).ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Case%20Study%20-%20Bike%20Sharing/Case_Study_Bike_Sharing_Notebook_%281%29%20%281%29.ipynb) | Hourly bike rental demand forecasting | Regression / ensemble |
+| `Case Study - Wine Quality/` | [Case_Study_WineQuality_Prediction.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Case%20Study%20-%20Wine%20Quality/Case_Study_WineQuality_Prediction.ipynb) | Wine quality classification | Ensemble classification |
+| `Case Study - Employee Attrition/` | [MLS_HR_Attrition_Notebook(updated).ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Case%20Study%20-%20Employee%20Attrition/MLS_HR_Attrition_Notebook%28updated%29.ipynb) | HR employee attrition prediction | Classification |
+| `Case Study - Diabetes Risk Prediction/` | [Case_Study_DiabetesRisk_Prediction.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Case%20Study%20-%20Diabetes%20Risk%20Prediction/Case_Study_DiabetesRisk_Prediction.ipynb) | Diabetes risk prediction | Classification |
+
+---
+
 ### Computer Vision
 
 | Path | Topic | Prerequisites |
@@ -205,7 +253,17 @@ Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
 | Melbourne housing | `Python Foundations/Exploratory Data Analysis/Melbourne_Housing.csv` |
 | MovieLens (movies, ratings, users) | `Python Foundations/MovieLens Case Study/` |
 | Loan modelling (AllLife Bank) | `Machine Learning/AllLifeBank/Loan_Modelling.csv` (includes `ZIPCode` for regional analysis in extended capstone notebooks) |
-| Pima Indians diabetes | `Machine Learning/Liner Regression Examples/Pima Indians Diabetes/pima-indians-diabetes-1.csv` |
+| Pima Indians diabetes | `Machine Learning/Linear Regression Examples/Pima Indians Diabetes/pima-indians-diabetes-1.csv` |
+| Anime ratings | `Machine Learning/Linear Regression Examples/Case Study - Anime Ratings/anime_data.csv` |
+| Boston housing prices | `Machine Learning/Linear Regression Examples/Practice Exercise - Housing prices/boston.csv` |
+| Loan delinquency | `Machine Learning/Decision Tree Examples/Case Study - Loan Delinquent Analysis/Loan_Delinquent_Dataset.csv` |
+| Credit risk (bagging / boosting) | `Advanced Machine Learning/Bagging/credit.csv`, `Advanced Machine Learning/Boosting/credit.csv` |
+| Loan clients (model tuning) | `Advanced Machine Learning/Model Tuning/Loanclients.csv` |
+| Pima Indians diabetes (model tuning) | `Advanced Machine Learning/Model Tuning/pima-indians-diabetes.csv` |
+| Bike sharing (hourly) | `Advanced Machine Learning/Case Study - Bike Sharing/hour.csv` |
+| Wine quality | `Advanced Machine Learning/Case Study - Wine Quality/winequality.csv` |
+| HR employee attrition | `Advanced Machine Learning/Case Study - Employee Attrition/HR_Employee_Attrition-1.csv` |
+| Airline customer sentiment | `Pre-Work/Airline Customer Sentiment Analysis/US_Airways.csv` |
 | Chest X-rays (zipped) | `Pre-Work/COVID Detection/X-ray Data.zip`, `Computer Vision/Covid/X-ray Data.zip` |
 
 ---
@@ -219,16 +277,20 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
    ```bash
    pip install numpy pandas matplotlib seaborn scikit-learn plotly statsmodels scipy
    ```
-3. **For deep learning notebooks:**
+3. **For ensemble / advanced ML notebooks:**
+   ```bash
+   pip install xgboost imbalanced-learn
+   ```
+4. **For deep learning notebooks:**
    ```bash
    pip install tensorflow opencv-python gradio pillow joblib
    ```
-4. **For the OpenAI demo:**
+5. **For the OpenAI demo:**
    ```bash
    pip install openai
    ```
-5. Open the notebook in its folder so relative paths to CSV files resolve correctly.
-6. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
+6. Open the notebook in its folder so relative paths to CSV files resolve correctly.
+7. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
 
 ---
 
