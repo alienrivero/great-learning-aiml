@@ -28,22 +28,35 @@ Instead of training one model, ensemble methods combine many models. The aggrega
 
 ### Model Tuning (`Model Tuning/`)
 
-These three notebooks tackle the mechanics of getting reliable model performance:
+These notebooks tackle the mechanics of getting reliable model performance:
 
 - **`K_fold_cross_validation_Notebook.ipynb`** — why a single train/test split gives an unstable estimate, and how K-fold CV fixes that by rotating the validation set. This is the correct way to evaluate any model.
 - **`Hyperparameter_tuning_Notebook.ipynb`** — `GridSearchCV` and `RandomizedSearchCV`: searching systematically over hyperparameter combinations using cross-validation so you don't overfit to your validation set.
 - **`Oversampling_and_undersampling_Notebook.ipynb`** — when one class is rare (fraud, disease, churn), accuracy is a misleading metric and models ignore the minority class. SMOTE oversamples the minority synthetically; undersampling reduces the majority. Learn when each approach makes sense.
+- **`MLS3_ETMT_session_notebook_updated.ipynb`** — full session notebook: end-to-end job-change prediction for an Ed Tech company (19,158 candidates, `jobs_data.csv`). Covers missing-value imputation, SMOTE and random undersampling for class imbalance, five ensemble classifiers (Bagging, Random Forest, GBM, AdaBoost, XGBoost) benchmarked against Decision Tree and Logistic Regression via `StratifiedKFold`, then tuned with `RandomizedSearchCV`. Good reference for the complete module workflow with recall as the target metric.
 
 ### Case Studies
 
 These apply ensemble methods and tuning to real, messier problems:
 
-| Notebook | Problem | What to notice |
+| Folder | Problem | What to notice |
 |---|---|---|
 | `Case Study - Bike Sharing/` | Predict hourly bike rental demand | Regression with ensemble methods; feature engineering from time data |
 | `Case Study - Wine Quality/` | Classify wine quality from chemical properties | How feature importance reveals which properties matter most |
 | `Case Study - Employee Attrition/` | Predict which employees will leave | Imbalanced classification; business interpretation of results |
 | `Case Study - Diabetes Risk Prediction/` | Predict diabetes risk from health indicators | End-to-end pipeline with tuning and evaluation |
+| `Additional Case Study - German Credit/` | Predict credit default risk for HRE Bank loan applicants | Compares `GridSearchCV` vs `RandomizedSearchCV` on Decision Tree and XGBoost; uses `scale_pos_weight` for class imbalance; recall-focused evaluation |
+
+### Capstone Project (`EasyVisa/`)
+
+End-to-end project predicting US visa approval (`Certified` / `Denied`) for foreign worker applications processed by OFLC. Demonstrates the full pipeline from EDA through ensemble modelling and hyperparameter tuning on a real-world imbalanced dataset.
+
+| File | Description |
+|---|---|
+| `Project_Full_Code_Notebook_EasyVisa.ipynb` | Full-code reference solution: EDA, SMOTE, Bagging / Random Forest / GBM / AdaBoost / XGBoost model comparison, `RandomizedSearchCV` tuning, feature importance, final model selection |
+| `EasyVisa.csv` | Visa applications with applicant and employer attributes (`continent`, `education_of_employee`, `has_job_experience`, `prevailing_wage`, `region_of_employment`, `case_status`) |
+| `Problem Statement.md` | Project brief and data dictionary |
+| `EasyVisa_Project_Documentation.md` | Extended project documentation |
 
 ---
 
@@ -54,7 +67,9 @@ These apply ensemble methods and tuning to real, messier problems:
 3. `Model Tuning/K_fold_cross_validation_Notebook.ipynb` — get the evaluation right first
 4. `Model Tuning/Hyperparameter_tuning_Notebook.ipynb` — then tune with confidence
 5. `Model Tuning/Oversampling_and_undersampling_Notebook.ipynb` — handle imbalanced data
-6. Any of the case studies — apply everything together
+6. `Model Tuning/MLS3_ETMT_session_notebook_updated.ipynb` — see all the above combined in a full session workflow
+7. Any of the case studies (Bike Sharing, Wine Quality, Employee Attrition, Diabetes Risk, German Credit) — apply everything to messier problems
+8. `EasyVisa/` — capstone: put it all together on a real visa-approval prediction task
 
 ---
 
