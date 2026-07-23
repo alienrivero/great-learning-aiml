@@ -14,6 +14,7 @@ AIML/
 ├── Python Foundations/          # NumPy, Pandas, EDA, visualization, case studies
 ├── Machine Learning/            # Regression, decision trees, clustering, capstone
 ├── Advanced Machine Learning/   # Ensemble methods, model tuning, advanced case studies
+├── Neural Networks/             # Feedforward neural networks (Keras/TensorFlow): tabular, audio, imbalanced data
 └── Computer Vision/             # Deep learning for image classification
 ```
 
@@ -44,7 +45,10 @@ AIML/
 | **K-Means Clustering** | [Machine Learning/K-Means Clustering Examples/Customer segmentation/Hands_on_K_Means_Clustering_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/K-Means%20Clustering%20Examples/Customer%20segmentation/Hands_on_K_Means_Clustering_Notebook.ipynb) and related case-study notebooks |
 | **t-SNE & Silhouette Score** | All notebooks under `Machine Learning/K-Means Clustering Examples/` |
 | **Sentiment analysis / NLP** | [Pre-Work/Airline Customer Sentiment Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Airline%20Customer%20Sentiment%20Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb) |
-| **TensorFlow / Keras** (CNN, image data) | [Pre-Work/COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb), [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) |
+| **TensorFlow / Keras** (feedforward NN, CNN, image data) | All notebooks under `Neural Networks/`, [Pre-Work/COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb), [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) |
+| **Neural network fundamentals** (Dense layers, activations, optimizers) | [Neural Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb), [Neural Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb) |
+| **Dropout / BatchNormalization / EarlyStopping** | [Neural Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb), [Neural Networks/Credit Card Fraud Detection Case Study/Credit_card_Fraud_detection_Notebook_Week.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection%20Case%20Study/Credit_card_Fraud_detection_Notebook_Week.ipynb) |
+| **Librosa / audio feature extraction** | [Neural Networks/Audio MNIST Digit Recognition/Audio_MNIST_Digit_Recognition.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Audio%20MNIST%20Digit%20Recognition/Audio_MNIST_Digit_Recognition.ipynb) |
 | **OpenCV (`cv2`)** | COVID detection notebooks (image preprocessing) |
 | **Gradio** (model deployment UI) | COVID detection notebooks |
 | **OpenAI API** | [Pre-Work/openai_api_demo.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/openai_api_demo.ipynb) |
@@ -79,6 +83,13 @@ AIML/
 | K-Means | [Machine Learning/K-Means Clustering Examples/Credit Card Customer Segmentation/ML_MLS3_Credit_Card_Customer_Segmentation_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/K-Means%20Clustering%20Examples/Credit%20Card%20Customer%20Segmentation/ML_MLS3_Credit_Card_Customer_Segmentation_Notebook.ipynb) | Credit card customers |
 | K-Means | [Machine Learning/K-Means Clustering Examples/HealthifyUs/HealthifyUs_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/K-Means%20Clustering%20Examples/HealthifyUs/HealthifyUs_Notebook.ipynb) | Food nutrient composition |
 | Random Forest + Decision Tree | [Pre-Work/Hotel Booking Cancellation Prediction/AI_Application_Case_Study_Hotel_Booking_Cancellation_Prediction_v2_0.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Hotel%20Booking%20Cancellation%20Prediction/AI_Application_Case_Study_Hotel_Booking_Cancellation_Prediction_v2_0.ipynb) | Hotel booking cancellation |
+| Feedforward Neural Network (Keras) | [Neural Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb), [.../Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb) | MNIST handwritten digit classification |
+| Feedforward Neural Network (Keras) | [Neural Networks/University Admission Prediction/Week_1_Case_Study_Predicting_Chances_of_Admission_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/University%20Admission%20Prediction/Week_1_Case_Study_Predicting_Chances_of_Admission_Notebook.ipynb) | University admission chance (regression) |
+| Feedforward Neural Network (Keras) | [Neural Networks/Used Cars Prediction/MLS_1_Case_Study_Used_Car_Price_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Used%20Cars%20Prediction/MLS_1_Case_Study_Used_Car_Price_Prediction_Notebook.ipynb) | Used car price prediction (regression) |
+| Feedforward Neural Network (Keras, multiclass) | [Neural Networks/Loan Status/Week-2-Quiz-Notebook-Learners.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Loan%20Status/Week-2-Quiz-Notebook-Learners.ipynb) | Loan payment status (paid off / collection / paid after collection) |
+| Feedforward Neural Network + class imbalance handling | [Neural Networks/Credit Card Fraud Detection/MLS_1_Credit_Card_Fraud_Detection_INN_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection/MLS_1_Credit_Card_Fraud_Detection_INN_Notebook.ipynb) | Credit card fraud detection |
+| Feedforward Neural Network + EarlyStopping/Dropout | [Neural Networks/Credit Card Fraud Detection Case Study/Credit_card_Fraud_detection_Notebook_Week.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection%20Case%20Study/Credit_card_Fraud_detection_Notebook_Week.ipynb) | Credit card fraud detection (ULB dataset, 284,807 transactions) |
+| Feedforward Neural Network + Librosa (audio features) | [Neural Networks/Audio MNIST Digit Recognition/Audio_MNIST_Digit_Recognition.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Audio%20MNIST%20Digit%20Recognition/Audio_MNIST_Digit_Recognition.ipynb) | Spoken digit recognition |
 | CNN (Keras) | [Pre-Work/COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb) | Chest X-ray COVID detection |
 | CNN (Keras) | [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) | Chest X-ray COVID detection |
 
@@ -90,7 +101,8 @@ AIML/
 2. **Python Foundations** — NumPy, Pandas, visualization, and EDA case studies  
 3. **Machine Learning** — supervised learning (regression, trees) then unsupervised (K-Means)  
 4. **Advanced Machine Learning** — ensemble methods (bagging, boosting), model tuning, and advanced case studies  
-5. **Computer Vision** — deep learning for image classification  
+5. **Neural Networks** — feedforward neural networks with Keras/TensorFlow: fundamentals, optimization, and applications to tabular, multiclass, imbalanced, and audio data  
+6. **Computer Vision** — deep learning for image classification (builds on the neural network fundamentals above)  
 
 ---
 
@@ -250,6 +262,30 @@ US visa approval prediction (`Certified` / `Denied`) for foreign worker applicat
 
 ---
 
+### Neural Networks
+
+#### Foundations (root of `Neural Networks/`)
+
+| Notebook | Focus | Dataset |
+|---|---|---|
+| [Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb) | First `Sequential`/`Dense` network; `relu`/`sigmoid`/`softmax`, `SGD` | MNIST handwritten digits |
+| [Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb) | Optimizing the same network: `Adam`, `Dropout`, `BatchNormalization` | MNIST handwritten digits |
+
+#### Applied case studies
+
+| Folder | Notebook | Problem | Key techniques |
+|---|---|---|---|
+| `University Admission Prediction/` | [Week_1_Case_Study_Predicting_Chances_of_Admission_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/University%20Admission%20Prediction/Week_1_Case_Study_Predicting_Chances_of_Admission_Notebook.ipynb) | Predict chance of admission (0–1) | `MinMaxScaler`, `Dense` + `Dropout`, `SGD`/`Adam`, sigmoid output |
+| `Used Cars Prediction/` | [MLS_1_Case_Study_Used_Car_Price_Prediction_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Used%20Cars%20Prediction/MLS_1_Case_Study_Used_Car_Price_Prediction_Notebook.ipynb) | Predict used car price | `StandardScaler`, `Dense`/`Sequential`, learning-rate experimentation with `SGD` |
+| `Loan Status/` | [Week-2-Quiz-Notebook-Learners.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Loan%20Status/Week-2-Quiz-Notebook-Learners.ipynb) | Multiclass loan outcome (paid off / collection / paid after collection) | One-hot features, `to_categorical`, `BatchNormalization`, `Dropout`, `RMSprop`/`Adam` |
+| `Credit Card Fraud Detection/` | [MLS_1_Credit_Card_Fraud_Detection_INN_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection/MLS_1_Credit_Card_Fraud_Detection_INN_Notebook.ipynb) | Fraud classification | `MinMaxScaler`, `class_weight` for imbalance |
+| `Credit Card Fraud Detection Case Study/` | [Credit_card_Fraud_detection_Notebook_Week.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection%20Case%20Study/Credit_card_Fraud_detection_Notebook_Week.ipynb) | Fraud classification on the ULB dataset (284,807 transactions, 492 frauds) | Full model-building workflow: layers, activations, optimizers/loss, `EarlyStopping`, weight initialization, `Dropout`, evaluation |
+| `Audio MNIST Digit Recognition/` | [Audio_MNIST_Digit_Recognition.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Audio%20MNIST%20Digit%20Recognition/Audio_MNIST_Digit_Recognition.ipynb) | Spoken digit recognition from audio | `librosa` feature extraction, `Sequential`/`Dense` classifier |
+
+**Note:** `Audio MNIST Digit Recognition/Audio_MNIST_Archive.zip` and `Credit Card Fraud Detection Case Study/creditcard.csv` are git-ignored (large files) — extract/download them before running those two notebooks. See [Neural Networks/README.md](Neural%20Networks/README.md) for the full write-up.
+
+---
+
 ### Computer Vision
 
 | Path | Topic | Prerequisites |
@@ -283,6 +319,12 @@ Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
 | Wine quality | `Advanced Machine Learning/Case Study - Wine Quality/winequality.csv` |
 | HR employee attrition | `Advanced Machine Learning/Case Study - Employee Attrition/HR_Employee_Attrition-1.csv` |
 | Airline customer sentiment | `Pre-Work/Airline Customer Sentiment Analysis/US_Airways.csv` |
+| University admission | `Neural Networks/University Admission Prediction/Admission_Predict.csv` |
+| Used cars (7,253 listings) | `Neural Networks/Used Cars Prediction/used_cars_data.csv` |
+| Loan payments (multiclass status) | `Neural Networks/Loan Status/Loan_payments_data.csv` |
+| Credit card fraud (synthetic) | `Neural Networks/Credit Card Fraud Detection/fraud_dataset.csv` |
+| Credit card fraud (ULB, 284,807 transactions) | `Neural Networks/Credit Card Fraud Detection Case Study/creditcard.csv` (git-ignored — download separately) |
+| Audio MNIST (spoken digits) | `Neural Networks/Audio MNIST Digit Recognition/Audio_MNIST_Archive.zip` (git-ignored — extract before running) |
 | Chest X-rays (zipped) | `Pre-Work/COVID Detection/X-ray Data.zip`, `Computer Vision/Covid/X-ray Data.zip` |
 
 ---
@@ -304,17 +346,21 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
    ```bash
    pip install tensorflow opencv-python gradio pillow joblib
    ```
-5. **For the OpenAI demo:**
+5. **For the Neural Networks/Audio MNIST notebook (audio feature extraction):**
+   ```bash
+   pip install librosa
+   ```
+6. **For the OpenAI demo:**
    ```bash
    pip install openai
    ```
-6. Open the notebook in its folder so relative paths to CSV files resolve correctly.
-7. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
+7. Open the notebook in its folder so relative paths to CSV files resolve correctly.
+8. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
 
 ---
 
 ## Notes
 
 - Course materials are proprietary to **Great Learning**; several notebooks include that notice in the first cells.
-- Large binary assets (`.zip`, `.keras`) are listed in `.gitignore` or stored locally — extract zips where noted before running COVID notebooks.
+- Large binary assets (`.zip`, `.keras`, `creditcard.csv`) are listed in `.gitignore` or stored locally — extract zips / download datasets where noted before running COVID notebooks or the `Neural Networks/Audio MNIST Digit Recognition/` and `Neural Networks/Credit Card Fraud Detection Case Study/` notebooks.
 - Some notebooks reference `google.colab` imports; comment those out or skip those cells when running locally.
