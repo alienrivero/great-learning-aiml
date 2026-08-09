@@ -58,6 +58,23 @@ Fraud detection and similar problems have a rare positive class. `class_weight`,
 
 - **`MLS_1_Case_Study_Used_Car_Price_Prediction_Notebook.ipynb`** — regression predicting used car `Price` from `used_cars_data.csv` (7,253 listings: location, year, kilometers driven, fuel/transmission/owner type, mileage/engine/power, brand/model). Heavy focus on `SGD` learning-rate experimentation alongside `StandardScaler` and a `Dense`/`Sequential` network — a good notebook for seeing how sensitive plain SGD training is to learning rate.
 
+### Bank Churn Prediction (`Bank Churn Prediction/`)
+
+- **`INN_Learner_Notebook_Full_code.ipynb`** — binary classification predicting whether a bank customer will churn in the next 6 months, from `bank-1.csv` (credit score, geography, gender, age, tenure, balance, number of products, credit card ownership, activity status, estimated salary). Full-code workflow: EDA, preprocessing, a `Dense`/`Sequential` Keras classifier, and evaluation focused on the minority (churn) class.
+
+### ReneWind — capstone (`ReneWind/`)
+
+Predictive-maintenance capstone: predict wind turbine generator failures from 40 anonymized sensor features (`Train.csv` 20,000 rows / `Test.csv` 5,000 rows) so generators can be repaired before they fail. Because a missed failure (false negative) is the costliest outcome, recall on the failure class is treated as an operational floor (≥90%), with precision/F1/PR-AUC used to pick the best model among those that clear it.
+
+| File | Description |
+|---|---|
+| [INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb](ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb) / `.html` | **Final submission version** — polished V2 solution: `SimpleImputer`/`StandardScaler` fit only on the training fold, `compute_class_weight` for the ~5.5% failure rate, a `build_ann(...)` helper covering Dropout/BatchNorm/L1-L2/optimizer choice, Keras Tuner `RandomSearch` over 6 architectures plus a fixed baseline, `EarlyStopping` on `val_pr_auc`, and a per-model validation-optimized decision threshold (`choose_threshold`, 181 thresholds scanned) instead of a naive 0.5 cutoff |
+| [INN_ReneWind_Main_Project_FullCode_Notebook_V2.ipynb](ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_V2.ipynb) / `.html` | Working V2 notebook (Keras Tuner search + threshold tuning) — same approach as the Final notebook |
+| [INN_ReneWind_Main_Project_FullCode_Notebook.ipynb](ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook.ipynb) | V1 — 7 hand-picked architectures, fixed 0.5 threshold; kept for reference. V2/Final improve test-set precision by 26 points and F1 by 0.13 over V1 at essentially the same recall — see `Implementation_Details.md` for the full V1 vs V2 comparison |
+| `Implementation_Details.md` | Detailed write-up: data, preprocessing, the 7-model search grid, threshold-selection logic, and final test-set results |
+| `Problem Statement.md`, `Problem Statement - ReneWind.docx`, `Rubric.md` | Project brief, data dictionary, and grading rubric |
+| `Train.csv`, `Test.csv` | Sensor data (40 predictors `V1`–`V40` + binary `Target`) |
+
 ---
 
 ## Suggested order
@@ -67,9 +84,11 @@ Fraud detection and similar problems have a rare positive class. `class_weight`,
 3. `University Admission Prediction/` — apply the basics to a small regression problem
 4. `Used Cars Prediction/` — a larger, messier regression problem; see why optimizer/learning-rate choice matters
 5. `Loan Status/` — multiclass classification with one-hot features
-6. `Credit Card Fraud Detection/` — introduce class imbalance handling
-7. `Credit Card Fraud Detection Case Study/` — the full workflow (layers, optimizers, EarlyStopping, weight init, dropout, evaluation) on a harder, more realistic fraud dataset
-8. `Audio MNIST Digit Recognition/` — apply the same fundamentals to a non-tabular, non-image modality (audio)
+6. `Bank Churn Prediction/` — binary classification on tabular customer data
+7. `Credit Card Fraud Detection/` — introduce class imbalance handling
+8. `Credit Card Fraud Detection Case Study/` — the full workflow (layers, optimizers, EarlyStopping, weight init, dropout, evaluation) on a harder, more realistic fraud dataset
+9. `Audio MNIST Digit Recognition/` — apply the same fundamentals to a non-tabular, non-image modality (audio)
+10. `ReneWind/` — capstone: hyperparameter search (Keras Tuner) + validation-optimized decision thresholds on a severely imbalanced, cost-sensitive classification problem
 
 ---
 
@@ -79,6 +98,6 @@ A neural network is only as good as its training recipe: architecture, activatio
 
 ## Notes
 
-- All notebooks use TensorFlow/Keras (`Sequential`, `Dense`, `Dropout`, `BatchNormalization`) plus scikit-learn for preprocessing/metrics.
+- All notebooks use TensorFlow/Keras (`Sequential`, `Dense`, `Dropout`, `BatchNormalization`) plus scikit-learn for preprocessing/metrics. `ReneWind/` additionally uses Keras Tuner for hyperparameter search.
 - Two data files are git-ignored due to size and must be added locally before running their notebooks: `Audio MNIST Digit Recognition/Audio_MNIST_Archive.zip` and `Credit Card Fraud Detection Case Study/creditcard.csv`.
 - Run notebooks from within their own folder so relative CSV paths resolve correctly.

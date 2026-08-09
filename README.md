@@ -15,7 +15,8 @@ AIML/
 ├── Machine Learning/            # Regression, decision trees, clustering, capstone
 ├── Advanced Machine Learning/   # Ensemble methods, model tuning, advanced case studies
 ├── Neural Networks/             # Feedforward neural networks (Keras/TensorFlow): tabular, audio, imbalanced data
-└── Computer Vision/             # Deep learning for image classification
+├── Computer Vision/             # Deep learning for image classification
+└── Natural Language Processing with Generaive AI/  # Word embeddings, transformers, and a RAG capstone
 ```
 
 ---
@@ -44,7 +45,11 @@ AIML/
 | **Boosting (AdaBoost, Gradient Boosting, XGBoost)** | [Advanced Machine Learning/Boosting/Ensemble_Hands_On_Boosting_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Boosting/Ensemble_Hands_On_Boosting_Notebook.ipynb), [Additional Case Study - German Credit](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Additional%20Case%20Study%20-%20%20German%20Credit/Case_study_1_AIML_ETMT_Practice_EXcercise_Week3_.ipynb), [MLS3 session notebook](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/Model%20Tuning/MLS3_ETMT_session_notebook_updated.ipynb), [EasyVisa project](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Advanced%20Machine%20Learning/EasyVisa/Project_Full_Code_Notebook_EasyVisa.ipynb) |
 | **K-Means Clustering** | [Machine Learning/K-Means Clustering Examples/Customer segmentation/Hands_on_K_Means_Clustering_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Machine%20Learning/K-Means%20Clustering%20Examples/Customer%20segmentation/Hands_on_K_Means_Clustering_Notebook.ipynb) and related case-study notebooks |
 | **t-SNE & Silhouette Score** | All notebooks under `Machine Learning/K-Means Clustering Examples/` |
-| **Sentiment analysis / NLP** | [Pre-Work/Airline Customer Sentiment Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Airline%20Customer%20Sentiment%20Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb) |
+| **Sentiment analysis / NLP** | [Pre-Work/Airline Customer Sentiment Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Airline%20Customer%20Sentiment%20Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb), all notebooks under `Natural Language Processing with Generaive AI/` |
+| **Word2Vec / GloVe embeddings (`gensim`)** | All notebooks under `Natural Language Processing with Generaive AI/Word Embeddings/` |
+| **Sentence-transformers / Hugging Face `transformers` (T5)** | All notebooks under `Natural Language Processing with Generaive AI/Transformers/` |
+| **Retrieval-Augmented Generation (RAG) — LangChain, Chroma, local LLM (`llama-cpp-python`)** | [Natural Language Processing with Generaive AI/Medical Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) |
+| **Keras Tuner (hyperparameter search for neural nets)** | [Neural Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb) |
 | **TensorFlow / Keras** (feedforward NN, CNN, image data) | All notebooks under `Neural Networks/`, [Pre-Work/COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb), [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) |
 | **Neural network fundamentals** (Dense layers, activations, optimizers) | [Neural Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb), [Neural Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb) |
 | **Dropout / BatchNormalization / EarlyStopping** | [Neural Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb), [Neural Networks/Credit Card Fraud Detection Case Study/Credit_card_Fraud_detection_Notebook_Week.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection%20Case%20Study/Credit_card_Fraud_detection_Notebook_Week.ipynb) |
@@ -90,8 +95,13 @@ AIML/
 | Feedforward Neural Network + class imbalance handling | [Neural Networks/Credit Card Fraud Detection/MLS_1_Credit_Card_Fraud_Detection_INN_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection/MLS_1_Credit_Card_Fraud_Detection_INN_Notebook.ipynb) | Credit card fraud detection |
 | Feedforward Neural Network + EarlyStopping/Dropout | [Neural Networks/Credit Card Fraud Detection Case Study/Credit_card_Fraud_detection_Notebook_Week.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection%20Case%20Study/Credit_card_Fraud_detection_Notebook_Week.ipynb) | Credit card fraud detection (ULB dataset, 284,807 transactions) |
 | Feedforward Neural Network + Librosa (audio features) | [Neural Networks/Audio MNIST Digit Recognition/Audio_MNIST_Digit_Recognition.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Audio%20MNIST%20Digit%20Recognition/Audio_MNIST_Digit_Recognition.ipynb) | Spoken digit recognition |
+| Feedforward Neural Network (Keras) | [Neural Networks/Bank Churn Prediction/INN_Learner_Notebook_Full_code.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Bank%20Churn%20Prediction/INN_Learner_Notebook_Full_code.ipynb) | Bank customer churn prediction |
+| Feedforward Neural Network + Keras Tuner (capstone) | [Neural Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb) | Wind turbine generator failure prediction (cost-sensitive, imbalanced) |
 | CNN (Keras) | [Pre-Work/COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb) | Chest X-ray COVID detection |
 | CNN (Keras) | [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) | Chest X-ray COVID detection |
+| Bag-of-Words / Word2Vec / GloVe + Random Forest | Notebooks under `Natural Language Processing with Generaive AI/Word Embeddings/` | Product review, airline review & news article sentiment/categorization |
+| Sentence-transformers embeddings + T5 (generative) | Notebooks under `Natural Language Processing with Generaive AI/Transformers/` | Product review, airline review & news article sentiment/categorization |
+| Retrieval-Augmented Generation (RAG capstone) | [Natural Language Processing with Generaive AI/Medical Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) | Medical Q&A over the Merck Manuals (capstone) |
 
 ---
 
@@ -101,8 +111,9 @@ AIML/
 2. **Python Foundations** — NumPy, Pandas, visualization, and EDA case studies  
 3. **Machine Learning** — supervised learning (regression, trees) then unsupervised (K-Means)  
 4. **Advanced Machine Learning** — ensemble methods (bagging, boosting), model tuning, and advanced case studies  
-5. **Neural Networks** — feedforward neural networks with Keras/TensorFlow: fundamentals, optimization, and applications to tabular, multiclass, imbalanced, and audio data  
+5. **Neural Networks** — feedforward neural networks with Keras/TensorFlow: fundamentals, optimization, and applications to tabular, multiclass, imbalanced, and audio data, culminating in the ReneWind hyperparameter-tuning capstone  
 6. **Computer Vision** — deep learning for image classification (builds on the neural network fundamentals above)  
+7. **Natural Language Processing with Generative AI** — text representation (Bag-of-Words → Word2Vec/GloVe → transformer embeddings), generative sentiment classification (T5), and a Retrieval-Augmented Generation capstone  
 
 ---
 
@@ -281,6 +292,17 @@ US visa approval prediction (`Certified` / `Denied`) for foreign worker applicat
 | `Credit Card Fraud Detection/` | [MLS_1_Credit_Card_Fraud_Detection_INN_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection/MLS_1_Credit_Card_Fraud_Detection_INN_Notebook.ipynb) | Fraud classification | `MinMaxScaler`, `class_weight` for imbalance |
 | `Credit Card Fraud Detection Case Study/` | [Credit_card_Fraud_detection_Notebook_Week.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Credit%20Card%20Fraud%20Detection%20Case%20Study/Credit_card_Fraud_detection_Notebook_Week.ipynb) | Fraud classification on the ULB dataset (284,807 transactions, 492 frauds) | Full model-building workflow: layers, activations, optimizers/loss, `EarlyStopping`, weight initialization, `Dropout`, evaluation |
 | `Audio MNIST Digit Recognition/` | [Audio_MNIST_Digit_Recognition.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Audio%20MNIST%20Digit%20Recognition/Audio_MNIST_Digit_Recognition.ipynb) | Spoken digit recognition from audio | `librosa` feature extraction, `Sequential`/`Dense` classifier |
+| `Bank Churn Prediction/` | [INN_Learner_Notebook_Full_code.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Bank%20Churn%20Prediction/INN_Learner_Notebook_Full_code.ipynb) | Predict customer churn within 6 months | `Dense`/`Sequential` classifier on tabular banking data |
+
+#### Capstone project (`ReneWind/`)
+
+Wind turbine generator failure prediction from 40 anonymized sensor features, with recall on the failure class treated as an operational floor (≥90%) since a missed failure is the costliest outcome.
+
+| Path | Description |
+|---|---|
+| [INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb) | Final submission: Keras Tuner `RandomSearch` over 6 architectures + fixed baseline, class weighting for the ~5.5% failure rate, and a per-model validation-optimized decision threshold (instead of a fixed 0.5 cutoff) |
+| `Implementation_Details.md` | Full write-up of the modeling approach, threshold-selection logic, and V1-vs-V2 test-set comparison |
+| `Train.csv` / `Test.csv` | 40 anonymized sensor predictors (`V1`–`V40`) + binary `Target` |
 
 **Note:** `Audio MNIST Digit Recognition/Audio_MNIST_Archive.zip` and `Credit Card Fraud Detection Case Study/creditcard.csv` are git-ignored (large files) — extract/download them before running those two notebooks. See [Neural Networks/README.md](Neural%20Networks/README.md) for the full write-up.
 
@@ -293,6 +315,41 @@ US visa approval prediction (`Certified` / `Denied`) for foreign worker applicat
 | [Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) | CNN-based COVID detection from chest X-rays | Extract `X-ray Data.zip` before running |
 
 Same COVID case study also appears under `Pre-Work/COVID Detection/` with deployment assets.
+
+---
+
+### Natural Language Processing with Generative AI
+
+#### Word Embeddings (`Word Embeddings/`)
+
+| Folder | Notebook | Approach |
+|---|---|---|
+| `Hands_on_Word2Vec_GloVe/` | [Hands_on_Word2Vec_GloVe_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Word%20Embeddings/Hands_on_Word2Vec_GloVe/Hands_on_Word2Vec_GloVe_Notebook.ipynb>) | Movie review sentiment: Bag-of-Words/TF-IDF baselines vs. self-trained Word2Vec and pretrained GloVe embeddings |
+| `Case Study - Word Embeddings/` | [MLS_Articles_Categorization_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Word%20Embeddings/Case%20Study%20-%20Word%20Embeddings/MLS_Articles_Categorization_Notebook.ipynb>) | News article categorization with Word2Vec/GloVe document embeddings |
+| `Case Study - Product Reviews Sentiment Analysis/` | [Case_Study_Product_Review_Sentiment_Analysis.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Word%20Embeddings/Case%20Study%20-%20Product%20Reviews%20Sentiment%20Analysis/Case_Study_Product_Review_Sentiment_Analysis.ipynb>) | Bag-of-Words baseline sentiment classifier |
+| `Additonal Case Study - Word Embeddings/` | [Case_Study_Product_Review_Sentiment_Analysis_Word_Embeddings-1.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Word%20Embeddings/Additonal%20Case%20Study%20-%20Word%20Embeddings/Case_Study_Product_Review_Sentiment_Analysis_Word_Embeddings-1.ipynb>) | Same product-review problem re-solved with Word2Vec embeddings |
+| `Case Study - Airline Customer Reviews Sentiment Analysis/` | [Session Notebook - Airline Customer Review Sentiment Analysis.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Word%20Embeddings/Case%20Study%20-%20Airline%20Customer%20Reviews%20Sentiment%20Analysis/Session%20Notebook%20-%20Airline%20Customer%20Review%20Sentiment%20Analysis.ipynb>) | Airline review sentiment with Bag-of-Words + Random Forest |
+
+#### Transformers (`Transformers/`)
+
+| Folder | Notebook | Approach |
+|---|---|---|
+| `Hands_on_Transformers/` | [Hands_on_Transformers_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Transformers/Hands_on_Transformers/Hands_on_Transformers_Notebook.ipynb>) | sentence-transformers embeddings + Random Forest, plus generative sentiment classification with T5 |
+| `Case Study - Airline Customer Review Sentiment Analysis/` | [MLS1_Customer_Sentiment_Analysis-1.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Transformers/Case%20Study%20-%20Airline%20Customer%20Review%20Sentiment%20Analysis/MLS1_Customer_Sentiment_Analysis-1.ipynb>) | Generative sentiment classification with T5 |
+| `Case Study - Product Reviews Sentiment Analysis/` | [Case_Study_Product_Review_Sentiment_Analysis_Transformers-1.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Transformers/Case%20Study%20-%20Product%20Reviews%20Sentiment%20Analysis/Case_Study_Product_Review_Sentiment_Analysis_Transformers-1.ipynb>) | sentence-transformers embeddings + Random Forest vs. T5 generative classification |
+| `Case Study - News Article Categorization/` | [MLS_News_Article_Categorization_Notebook_V3.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Transformers/Case%20Study%20-%20News%20Article%20Categorization/MLS_News_Article_Categorization_Notebook_V3.ipynb>) | sentence-transformers embeddings, K-Means clustering, and supervised categorization |
+
+#### Capstone project (`Medical Assistant/`)
+
+RAG-based medical Q&A assistant over the *Merck Manuals* (4,000+ page medical reference): raw-LLM answers → prompt-engineered LLM answers → full RAG pipeline → groundedness/relevance evaluation.
+
+| File | Description |
+|---|---|
+| [Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) | `PyMuPDFLoader` + `RecursiveCharacterTextSplitter` for chunking, `SentenceTransformerEmbeddings`, `Chroma` vector store, local LLM via `llama-cpp-python`, prompt engineering, and LLM-based groundedness/relevance evaluation |
+| `medical_diagnosis_manual.pdf` | Source corpus (Merck Manuals) |
+| `problem_statement.md` / `rubrics.md` / `faq.md` | Project brief, grading rubric, and setup FAQ |
+
+**Note:** requires a GPU runtime (Colab: **Runtime → Change runtime type → T4 GPU**). See [Natural Language Processing with Generaive AI/README.md](<Natural%20Language%20Processing%20with%20Generaive%20AI/README.md>) for the full write-up.
 
 ---
 
@@ -326,6 +383,14 @@ Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
 | Credit card fraud (ULB, 284,807 transactions) | `Neural Networks/Credit Card Fraud Detection Case Study/creditcard.csv` (git-ignored — download separately) |
 | Audio MNIST (spoken digits) | `Neural Networks/Audio MNIST Digit Recognition/Audio_MNIST_Archive.zip` (git-ignored — extract before running) |
 | Chest X-rays (zipped) | `Pre-Work/COVID Detection/X-ray Data.zip`, `Computer Vision/Covid/X-ray Data.zip` |
+| Bank churn | `Neural Networks/Bank Churn Prediction/bank-1.csv` |
+| Wind turbine sensor data (ReneWind) | `Neural Networks/ReneWind/Train.csv`, `Neural Networks/ReneWind/Test.csv` |
+| Product reviews (sentiment) | `Natural Language Processing with Generaive AI/Word Embeddings/Case Study - Product Reviews Sentiment Analysis/Product_Reviews.csv` (also used by the Word2Vec and Transformers versions of this case study) |
+| Airline customer reviews | `Natural Language Processing with Generaive AI/Word Embeddings/Case Study - Airline Customer Reviews Sentiment Analysis/Dataset - US_Airways.csv` (also used by the Transformers version) |
+| News articles (categorization) | `Natural Language Processing with Generaive AI/Word Embeddings/Case Study - Word Embeddings/Articles.csv`, `Natural Language Processing with Generaive AI/Transformers/Case Study - News Article Categorization/news_articles.csv` + `news_article_labels.csv` |
+| Movie reviews (sentiment) | `Natural Language Processing with Generaive AI/Word Embeddings/Hands_on_Word2Vec_GloVe/movie_reviews.csv`, `Natural Language Processing with Generaive AI/Transformers/Hands_on_Transformers/movie_reviews.csv` |
+| Pretrained GloVe vectors (100d) | `Natural Language Processing with Generaive AI/Word Embeddings/Case Study - Word Embeddings/glove.6B.100d.zip`, `.../Hands_on_Word2Vec_GloVe/glove.6B.100d.txt` |
+| Merck Manuals medical reference (RAG source, PDF) | `Natural Language Processing with Generaive AI/Medical Assistant/medical_diagnosis_manual.pdf` |
 
 ---
 
@@ -350,12 +415,28 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
    ```bash
    pip install librosa
    ```
-6. **For the OpenAI demo:**
+6. **For the ReneWind capstone (hyperparameter search):**
+   ```bash
+   pip install keras-tuner
+   ```
+7. **For the OpenAI demo:**
    ```bash
    pip install openai
    ```
-7. Open the notebook in its folder so relative paths to CSV files resolve correctly.
-8. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
+8. **For the Word Embeddings notebooks (NLP):**
+   ```bash
+   pip install nltk gensim spacy wordcloud unidecode
+   ```
+9. **For the Transformers notebooks (NLP):**
+   ```bash
+   pip install torch transformers sentence-transformers
+   ```
+10. **For the Medical Assistant RAG capstone (NLP):**
+    ```bash
+    pip install langchain langchain-community chromadb pymupdf llama-cpp-python huggingface_hub tiktoken
+    ```
+11. Open the notebook in its folder so relative paths to CSV files resolve correctly.
+12. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
 
 ---
 
@@ -364,3 +445,4 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
 - Course materials are proprietary to **Great Learning**; several notebooks include that notice in the first cells.
 - Large binary assets (`.zip`, `.keras`, `creditcard.csv`) are listed in `.gitignore` or stored locally — extract zips / download datasets where noted before running COVID notebooks or the `Neural Networks/Audio MNIST Digit Recognition/` and `Neural Networks/Credit Card Fraud Detection Case Study/` notebooks.
 - Some notebooks reference `google.colab` imports; comment those out or skip those cells when running locally.
+- The `Natural Language Processing with Generaive AI/Medical Assistant/` RAG capstone requires a GPU runtime (Colab: T4 GPU) to run the local LLM via `llama-cpp-python`.
