@@ -16,7 +16,7 @@ AIML/
 ├── Advanced Machine Learning/   # Ensemble methods, model tuning, advanced case studies
 ├── Neural Networks/             # Feedforward neural networks (Keras/TensorFlow): tabular, audio, imbalanced data
 ├── Computer Vision/             # Deep learning for image classification
-└── Natural Language Processing with Generaive AI/  # Word embeddings, transformers, and a RAG capstone
+└── Natural Language Processing with Generaive AI/  # Word embeddings, transformers, LLM prompt engineering, RAG, and a RAG capstone
 ```
 
 ---
@@ -48,7 +48,9 @@ AIML/
 | **Sentiment analysis / NLP** | [Pre-Work/Airline Customer Sentiment Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/Airline%20Customer%20Sentiment%20Analysis/AI_Application_Case_Study_Airline_Customer_Sentiment_Analysis.ipynb), all notebooks under `Natural Language Processing with Generaive AI/` |
 | **Word2Vec / GloVe embeddings (`gensim`)** | All notebooks under `Natural Language Processing with Generaive AI/Word Embeddings/` |
 | **Sentence-transformers / Hugging Face `transformers` (T5)** | All notebooks under `Natural Language Processing with Generaive AI/Transformers/` |
-| **Retrieval-Augmented Generation (RAG) — LangChain, Chroma, local LLM (`llama-cpp-python`)** | [Natural Language Processing with Generaive AI/Medical Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) |
+| **Prompt engineering (hosted LLM `gpt-4o-mini` & local LLM `llama-cpp-python`)** | All notebooks under `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` |
+| **Retrieval-Augmented Generation (RAG) — LangChain, Chroma, local LLM (`llama-cpp-python`)** | All notebooks under `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/`, [Natural Language Processing with Generaive AI/Medical Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) |
+| **Byte-Pair Encoding tokenization (`tiktoken`)** | [Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Additional Learning Material - Understanding_Embeddings/Understanding_Embeddings.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Retrieval%20Augmented%20Generation/Additional%20Learning%20Material%20-%20Understanding_Embeddings/Understanding_Embeddings.ipynb>) |
 | **Keras Tuner (hyperparameter search for neural nets)** | [Neural Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb) |
 | **TensorFlow / Keras** (feedforward NN, CNN, image data) | All notebooks under `Neural Networks/`, [Pre-Work/COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb), [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) |
 | **Neural network fundamentals** (Dense layers, activations, optimizers) | [Neural Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_1_Hands_on_Introduction_to_Neural_Networks_Notebook.ipynb), [Neural Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Week_2_Hands_on_Optimizing_Neural_Networks_Notebook.ipynb) |
@@ -56,7 +58,7 @@ AIML/
 | **Librosa / audio feature extraction** | [Neural Networks/Audio MNIST Digit Recognition/Audio_MNIST_Digit_Recognition.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/Audio%20MNIST%20Digit%20Recognition/Audio_MNIST_Digit_Recognition.ipynb) |
 | **OpenCV (`cv2`)** | COVID detection notebooks (image preprocessing) |
 | **Gradio** (model deployment UI) | COVID detection notebooks |
-| **OpenAI API** | [Pre-Work/openai_api_demo.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/openai_api_demo.ipynb) |
+| **OpenAI API** | [Pre-Work/openai_api_demo.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/openai_api_demo.ipynb), [Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/LLM_Hands_on_Prompt_Engineering_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/LLM_Hands_on_Prompt_Engineering_Notebook.ipynb>), [.../Case Study - Restaurant Review Analysis/MLS_Restaurant_Review_Analysis_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/Case%20Study%20-%20Restaurant%20Review%20Analysis/MLS_Restaurant_Review_Analysis_Notebook.ipynb>) |
 | **Scikit-learn (general)** | Most notebooks under `Machine Learning/`, `Advanced Machine Learning/`, and applied AI notebooks in `Pre-Work/` |
 
 ---
@@ -101,6 +103,8 @@ AIML/
 | CNN (Keras) | [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) | Chest X-ray COVID detection |
 | Bag-of-Words / Word2Vec / GloVe + Random Forest | Notebooks under `Natural Language Processing with Generaive AI/Word Embeddings/` | Product review, airline review & news article sentiment/categorization |
 | Sentence-transformers embeddings + T5 (generative) | Notebooks under `Natural Language Processing with Generaive AI/Transformers/` | Product review, airline review & news article sentiment/categorization |
+| Prompt engineering (hosted `gpt-4o-mini` / local LLM) | Notebooks under `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` | Restaurant review sentiment & business insights; news article classification, headline & summary generation |
+| Retrieval-Augmented Generation (LangChain, Chroma/vector retriever, local LLM) | Notebooks under `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/` | Legal case similarity & clustering; Apple 10-K MD&A Q&A; Apple HBR report document Q&A |
 | Retrieval-Augmented Generation (RAG capstone) | [Natural Language Processing with Generaive AI/Medical Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) | Medical Q&A over the Merck Manuals (capstone) |
 
 ---
@@ -113,7 +117,7 @@ AIML/
 4. **Advanced Machine Learning** — ensemble methods (bagging, boosting), model tuning, and advanced case studies  
 5. **Neural Networks** — feedforward neural networks with Keras/TensorFlow: fundamentals, optimization, and applications to tabular, multiclass, imbalanced, and audio data, culminating in the ReneWind hyperparameter-tuning capstone  
 6. **Computer Vision** — deep learning for image classification (builds on the neural network fundamentals above)  
-7. **Natural Language Processing with Generative AI** — text representation (Bag-of-Words → Word2Vec/GloVe → transformer embeddings), generative sentiment classification (T5), and a Retrieval-Augmented Generation capstone  
+7. **Natural Language Processing with Generative AI** — text representation (Bag-of-Words → Word2Vec/GloVe → transformer embeddings), generative sentiment classification (T5), prompt engineering with hosted and local LLMs, Retrieval-Augmented Generation fundamentals and case studies, and a RAG capstone  
 
 ---
 
@@ -339,6 +343,22 @@ Same COVID case study also appears under `Pre-Work/COVID Detection/` with deploy
 | `Case Study - Product Reviews Sentiment Analysis/` | [Case_Study_Product_Review_Sentiment_Analysis_Transformers-1.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Transformers/Case%20Study%20-%20Product%20Reviews%20Sentiment%20Analysis/Case_Study_Product_Review_Sentiment_Analysis_Transformers-1.ipynb>) | sentence-transformers embeddings + Random Forest vs. T5 generative classification |
 | `Case Study - News Article Categorization/` | [MLS_News_Article_Categorization_Notebook_V3.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Transformers/Case%20Study%20-%20News%20Article%20Categorization/MLS_News_Article_Categorization_Notebook_V3.ipynb>) | sentence-transformers embeddings, K-Means clustering, and supervised categorization |
 
+#### LLMs and Prompt Engineering (`LLMs and Prompt Engineering/`)
+
+| Folder | Notebook | Approach |
+|---|---|---|
+| — | [LLM_Hands_on_Prompt_Engineering_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/LLM_Hands_on_Prompt_Engineering_Notebook.ipynb>) | OpenAI client basics: response parameters (`max_tokens`, `temperature`, `top_p`), zero-shot/few-shot and structured-output prompting |
+| `Case Study - Restaurant Review Analysis/` | [MLS_Restaurant_Review_Analysis_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/Case%20Study%20-%20Restaurant%20Review%20Analysis/MLS_Restaurant_Review_Analysis_Notebook.ipynb>) | Iterative `gpt-4o-mini` prompt engineering: sentiment → structured JSON → aspect-based sentiment → liked/disliked features → auto-generated response, ending in business recommendations |
+| `Case Study - News Article Categorization and Summarization/` | [Case_Study_News_Article_Categorization_and_Summarization-1.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/Case%20Study%20-%20News%20Article%20Categorization%20and%20Summarization/Case_Study_News_Article_Categorization_and_Summarization-1.ipynb>) | Prompt engineering with a local LLM (`llama-cpp-python`): article classification, structured output, headline generation, and summarization |
+
+#### Retrieval Augmented Generation (`Retrieval Augmented Generation/`)
+
+| Folder | Notebook | Approach |
+|---|---|---|
+| `Additional Learning Material - Understanding_Embeddings/` | [Understanding_Embeddings.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Retrieval%20Augmented%20Generation/Additional%20Learning%20Material%20-%20Understanding_Embeddings/Understanding_Embeddings.ipynb>) | Byte-Pair Encoding tokenization (`tiktoken`) and sentence embeddings applied to legal case similarity and document clustering |
+| `Hands-On Notebook/` | [RAG_Colab.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Retrieval%20Augmented%20Generation/Hands-On%20Notebook/RAG_Colab.ipynb>) | Guided end-to-end RAG build: chunk → embed → local LLM (`llama-cpp-python`) → `langchain` retrieval chain → query → evaluate, over an Apple 10-K MD&A excerpt |
+| `Case Study - Apple HBR Report Document Q&A/` | [MLS_Apple_HBR_Notebook_V2.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Retrieval%20Augmented%20Generation/Case%20Study%20-%20Apple%20HBR%20Report%20Document%20Q%26A/MLS_Apple_HBR_Notebook_V2.ipynb>) | Full RAG case study over a Harvard Business Review report, including prompt/parameter tuning and LLM-based groundedness/relevance evaluation |
+
 #### Capstone project (`Medical Assistant/`)
 
 RAG-based medical Q&A assistant over the *Merck Manuals* (4,000+ page medical reference): raw-LLM answers → prompt-engineered LLM answers → full RAG pipeline → groundedness/relevance evaluation.
@@ -390,6 +410,11 @@ Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
 | News articles (categorization) | `Natural Language Processing with Generaive AI/Word Embeddings/Case Study - Word Embeddings/Articles.csv`, `Natural Language Processing with Generaive AI/Transformers/Case Study - News Article Categorization/news_articles.csv` + `news_article_labels.csv` |
 | Movie reviews (sentiment) | `Natural Language Processing with Generaive AI/Word Embeddings/Hands_on_Word2Vec_GloVe/movie_reviews.csv`, `Natural Language Processing with Generaive AI/Transformers/Hands_on_Transformers/movie_reviews.csv` |
 | Pretrained GloVe vectors (100d) | `Natural Language Processing with Generaive AI/Word Embeddings/Case Study - Word Embeddings/glove.6B.100d.zip`, `.../Hands_on_Word2Vec_GloVe/glove.6B.100d.txt` |
+| Restaurant reviews | `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/Case Study - Restaurant Review Analysis/restaurant_reviews.csv` |
+| News articles (LLM categorization/summarization) | `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/Case Study - News Article Categorization and Summarization/Dataset - articles.csv` |
+| Legal cases & documents (embeddings) | `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Additional Learning Material - Understanding_Embeddings/legal_cases.csv`, `.../legal_documents.csv` |
+| Apple 10-K MD&A excerpt (RAG hands-on) | `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Hands-On Notebook/AAPL-MDA.txt` |
+| Apple HBR report (RAG case study, PDF) | `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Case Study - Apple HBR Report Document Q&A/HBR_How_Apple_Is_Organized_For_Innovation-4.pdf` |
 | Merck Manuals medical reference (RAG source, PDF) | `Natural Language Processing with Generaive AI/Medical Assistant/medical_diagnosis_manual.pdf` |
 
 ---
@@ -431,12 +456,21 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
    ```bash
    pip install torch transformers sentence-transformers
    ```
-10. **For the Medical Assistant RAG capstone (NLP):**
+10. **For the LLMs and Prompt Engineering notebooks (NLP):**
+    ```bash
+    pip install openai llama-cpp-python huggingface_hub datasets
+    ```
+    The Restaurant Review Analysis notebook needs a real OpenAI key in its `config.json` (the committed file only has a placeholder); the other notebooks in this folder run a downloaded local LLM instead.
+11. **For the Retrieval Augmented Generation notebooks (NLP):**
+    ```bash
+    pip install langchain langchain-community tiktoken sentence-transformers llama-cpp-python huggingface_hub
+    ```
+12. **For the Medical Assistant RAG capstone (NLP):**
     ```bash
     pip install langchain langchain-community chromadb pymupdf llama-cpp-python huggingface_hub tiktoken
     ```
-11. Open the notebook in its folder so relative paths to CSV files resolve correctly.
-12. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
+13. Open the notebook in its folder so relative paths to CSV files resolve correctly.
+14. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
 
 ---
 
@@ -446,3 +480,4 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
 - Large binary assets (`.zip`, `.keras`, `creditcard.csv`) are listed in `.gitignore` or stored locally — extract zips / download datasets where noted before running COVID notebooks or the `Neural Networks/Audio MNIST Digit Recognition/` and `Neural Networks/Credit Card Fraud Detection Case Study/` notebooks.
 - Some notebooks reference `google.colab` imports; comment those out or skip those cells when running locally.
 - The `Natural Language Processing with Generaive AI/Medical Assistant/` RAG capstone requires a GPU runtime (Colab: T4 GPU) to run the local LLM via `llama-cpp-python`.
+- Several `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` and `Retrieval Augmented Generation/` notebooks also download and run a local LLM via `llama-cpp-python`; a GPU speeds this up but a real API key is only required for the OpenAI-based Restaurant Review Analysis notebook.
