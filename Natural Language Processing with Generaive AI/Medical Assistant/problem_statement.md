@@ -5,10 +5,15 @@ The healthcare industry is rapidly evolving, and professionals face increasing c
 
 Healthcare professionals often encounter information overload, struggling to sift through extensive research and data to create accurate diagnoses and treatment plans. This challenge is amplified by the need for efficiency, particularly in emergencies, where time-sensitive decisions are vital. Furthermore, access to trusted, current medical information from renowned manuals and research papers is essential for maintaining high standards of care.
 
-To address these challenges, healthcare centers can focus on integrating systems that streamline access to medical knowledge, provide tools to support quick decision-making and enhance efficiency. Leveraging centralized knowledge platforms and ensuring healthcare providers have continuous access to reliable resources can significantly improve patient care and operational effectiveness.
+To address these challenges, healthcare centers can focus on integrating systems that streamline access to medical knowledge, provide tools to support quick decision-making, and enhance efficiency. Leveraging centralized knowledge platforms and ensuring healthcare providers have continuous access to reliable resources can significantly improve patient care and operational effectiveness.
 
 ## Objective
-As an AI specialist, your task is to develop a RAG-based AI solution using renowned medical manuals to address healthcare challenges. The objective is to understand information overload, apply AI techniques to streamline decision-making, analyze its impact on diagnostics and patient outcomes, evaluate its potential to standardize care practices, and create a functional prototype demonstrating its feasibility and effectiveness.
+As an AI specialist, your task is to develop a RAG-based AI solution using renowned medical manuals to address healthcare challenges. The objective is to:
+- Understand information overload
+- Apply AI techniques to streamline decision-making
+- Analyze its impact on diagnostics and patient outcomes
+- Evaluate its potential to standardize care practices
+- Create a functional prototype demonstrating its feasibility and effectiveness
 
 ## Questions to Answer
 1. What is the protocol for managing sepsis in a critical care unit?
@@ -18,9 +23,9 @@ As an AI specialist, your task is to develop a RAG-based AI solution using renow
 5. What are the necessary precautions and treatment steps for a person who has fractured their leg during a hiking trip, and what should be considered for their care and recovery?
 
 ## Data Dictionary
-The *Merck Manuals* are medical references published by the American pharmaceutical company Merck & Co., that cover a wide range of medical topics, including disorders, tests, diagnoses, and drugs. The manuals have been published since 1899 when Merck & Co. was still a subsidiary of the German company Merck. 
-
-The manual is a PDF with over 4,000 pages divided into 23 sections.
+- **Source:** *Merck Manuals* (Medical references published by Merck & Co.)
+- **Scope:** Covers disorders, tests, diagnoses, and drugs.
+- **Format:** PDF with over 4,000 pages divided into 23 sections.
 
 ## Important Note
 Please set the runtime to **T4-GPU** in Google Colab:
