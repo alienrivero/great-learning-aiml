@@ -16,7 +16,8 @@ AIML/
 ├── Advanced Machine Learning/   # Ensemble methods, model tuning, advanced case studies
 ├── Neural Networks/             # Feedforward neural networks (Keras/TensorFlow): tabular, audio, imbalanced data
 ├── Computer Vision/             # Deep learning for image classification
-└── Natural Language Processing with Generaive AI/  # Word embeddings, transformers, LLM prompt engineering, RAG, and a RAG capstone
+├── Natural Language Processing with Generaive AI/  # Word embeddings, transformers, LLM prompt engineering, RAG, and a RAG capstone
+└── AI Agents for Automation/    # Tool-calling agents and LangGraph agentic workflows for automated data analysis
 ```
 
 ---
@@ -60,6 +61,7 @@ AIML/
 | **Gradio** (model deployment UI) | COVID detection notebooks |
 | **OpenAI API** | [Pre-Work/openai_api_demo.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/openai_api_demo.ipynb), [Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/LLM_Hands_on_Prompt_Engineering_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/LLM_Hands_on_Prompt_Engineering_Notebook.ipynb>), [.../Case Study - Restaurant Review Analysis/MLS_Restaurant_Review_Analysis_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/Case%20Study%20-%20Restaurant%20Review%20Analysis/MLS_Restaurant_Review_Analysis_Notebook.ipynb>) |
 | **Scikit-learn (general)** | Most notebooks under `Machine Learning/`, `Advanced Machine Learning/`, and applied AI notebooks in `Pre-Work/` |
+| **LangChain / LangGraph agents, tool & function calling** | All notebooks under `AI Agents for Automation/` |
 
 ---
 
@@ -106,6 +108,8 @@ AIML/
 | Prompt engineering (hosted `gpt-4o-mini` / local LLM) | Notebooks under `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` | Restaurant review sentiment & business insights; news article classification, headline & summary generation |
 | Retrieval-Augmented Generation (LangChain, Chroma/vector retriever, local LLM) | Notebooks under `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/` | Legal case similarity & clustering; Apple 10-K MD&A Q&A; Apple HBR report document Q&A |
 | Retrieval-Augmented Generation (RAG capstone) | [Natural Language Processing with Generaive AI/Medical Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) | Medical Q&A over the Merck Manuals (capstone) |
+| Tool-calling agent (SQL over SQLite) | [AI Agents for Automation/Hands-on Notebook/Hands-on Notebook - Introduction to AI Agents.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Hands-on%20Notebook/Hands-on%20Notebook%20-%20Introduction%20to%20AI%20Agents.ipynb>) | CreditX credit-card recommendations |
+| Agentic workflow (LangGraph: plan → validate → code → evaluate → execute) | [AI Agents for Automation/Case Study - CodeGen Analyst Agent/MLS_1_CodeGen_Analyst_Agent.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Case%20Study%20-%20CodeGen%20Analyst%20Agent/MLS_1_CodeGen_Analyst_Agent.ipynb>) | Used-car market data analysis (CodeGen Analyst Agent) |
 
 ---
 
@@ -118,6 +122,7 @@ AIML/
 5. **Neural Networks** — feedforward neural networks with Keras/TensorFlow: fundamentals, optimization, and applications to tabular, multiclass, imbalanced, and audio data, culminating in the ReneWind hyperparameter-tuning capstone  
 6. **Computer Vision** — deep learning for image classification (builds on the neural network fundamentals above)  
 7. **Natural Language Processing with Generative AI** — text representation (Bag-of-Words → Word2Vec/GloVe → transformer embeddings), generative sentiment classification (T5), prompt engineering with hosted and local LLMs, Retrieval-Augmented Generation fundamentals and case studies, and a RAG capstone  
+8. **AI Agents for Automation** — tool/function-calling agents grounded in a live database, then multi-node LangGraph agentic workflows (plan → validate → code → evaluate → execute) benchmarked against an LLM-only baseline  
 
 ---
 
@@ -373,6 +378,17 @@ RAG-based medical Q&A assistant over the *Merck Manuals* (4,000+ page medical re
 
 ---
 
+### AI Agents for Automation
+
+| Folder | Notebook | Approach | Data |
+|---|---|---|---|
+| `Hands-on Notebook/` | [Hands-on Notebook - Introduction to AI Agents.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Hands-on%20Notebook/Hands-on%20Notebook%20-%20Introduction%20to%20AI%20Agents.ipynb>) | Single-agent, tool/function-calling system for CreditX credit-card recommendations: prompt-only customer history vs. an agent that queries a SQLite database for it | `credits.db` (SQLite `credit_cards` / `customers` tables), `config.json` |
+| `Case Study - CodeGen Analyst Agent/` | [MLS_1_CodeGen_Analyst_Agent.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Case%20Study%20-%20CodeGen%20Analyst%20Agent/MLS_1_CodeGen_Analyst_Agent.ipynb>) | CodeGen Analyst Agent: LLM-only code generation baseline vs. a LangGraph planning agent (Planner → Plan Validator → Replanner → Plan-to-Code → Code Evaluation) vs. the same agent extended with a `PythonREPL` execution tool, compared across three "rigour levels" of analysis requests | `used_car_dataset.csv` |
+
+**Note:** the Hands-on notebook needs a real OpenAI key in its `config.json` — the committed file only holds a placeholder. See [AI Agents for Automation/README.md](<AI%20Agents%20for%20Automation/README.md>) for the full write-up.
+
+---
+
 ## Datasets at a glance
 
 Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
@@ -416,6 +432,8 @@ Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
 | Apple 10-K MD&A excerpt (RAG hands-on) | `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Hands-On Notebook/AAPL-MDA.txt` |
 | Apple HBR report (RAG case study, PDF) | `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Case Study - Apple HBR Report Document Q&A/HBR_How_Apple_Is_Organized_For_Innovation-4.pdf` |
 | Merck Manuals medical reference (RAG source, PDF) | `Natural Language Processing with Generaive AI/Medical Assistant/medical_diagnosis_manual.pdf` |
+| CreditX credit cards & customers (SQLite) | `AI Agents for Automation/Hands-on Notebook/credits.db` |
+| Used car listings (CodeGen Analyst Agent) | `AI Agents for Automation/Case Study - CodeGen Analyst Agent/used_car_dataset.csv` |
 
 ---
 
@@ -469,8 +487,13 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
     ```bash
     pip install langchain langchain-community chromadb pymupdf llama-cpp-python huggingface_hub tiktoken
     ```
-13. Open the notebook in its folder so relative paths to CSV files resolve correctly.
-14. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
+13. **For the AI Agents for Automation notebooks:**
+    ```bash
+    pip install langgraph langchain langchain-core langchain-openai langchain-community langchain-experimental grandalf
+    ```
+    The Hands-on Notebook needs a real OpenAI key in its `config.json` (the committed file only has a placeholder).
+14. Open the notebook in its folder so relative paths to CSV files resolve correctly.
+15. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
 
 ---
 
@@ -481,3 +504,4 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
 - Some notebooks reference `google.colab` imports; comment those out or skip those cells when running locally.
 - The `Natural Language Processing with Generaive AI/Medical Assistant/` RAG capstone requires a GPU runtime (Colab: T4 GPU) to run the local LLM via `llama-cpp-python`.
 - Several `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` and `Retrieval Augmented Generation/` notebooks also download and run a local LLM via `llama-cpp-python`; a GPU speeds this up but a real API key is only required for the OpenAI-based Restaurant Review Analysis notebook.
+- The `AI Agents for Automation/Case Study - CodeGen Analyst Agent/` notebook calls `gpt-4o-mini` (planning/generation) and `gpt-4o` (evaluation); both notebooks in `AI Agents for Automation/` need a real OpenAI key.
