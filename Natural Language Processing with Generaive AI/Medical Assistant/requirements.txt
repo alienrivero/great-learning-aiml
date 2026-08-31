@@ -1,0 +1,22 @@
+# Core stack matching the improved Llama / OpenAI notebooks, plus Jupyter for local runs.
+# llama-cpp-python is installed separately from a CUDA 13 / sm_120 wheel
+# (see setup_local.ps1) because the Colab pin 0.2.45 cannot use an RTX 5090.
+# openai is required only by Full_Code_Medical_Assistant_Notebook_OpenAI_IMPROVED.ipynb.
+
+langchain==0.3.27
+langchain-community==0.3.27
+chromadb==1.0.15
+pymupdf==1.26.3
+tiktoken==0.9.0
+sentence-transformers==3.0.1
+openai>=1.40.0
+huggingface_hub>=0.23.0
+diskcache>=5.6.1
+numpy
+pandas
+matplotlib
+seaborn
+jupyter
+ipykernel
+notebook
+ipywidgets
