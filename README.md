@@ -17,7 +17,7 @@ AIML/
 ├── Neural Networks/             # Feedforward neural networks (Keras/TensorFlow): tabular, audio, imbalanced data
 ├── Computer Vision/             # Deep learning for image classification
 ├── Natural Language Processing with Generaive AI/  # Word embeddings, transformers, LLM prompt engineering, RAG, and a RAG capstone
-└── AI Agents for Automation/    # Tool-calling agents and LangGraph agentic workflows for automated data analysis
+└── AI Agents for Automation/    # Tool-calling agents, ReAct agents with MCP, and multi-agent LangGraph systems
 ```
 
 ---
@@ -108,8 +108,10 @@ AIML/
 | Prompt engineering (hosted `gpt-4o-mini` / local LLM) | Notebooks under `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` | Restaurant review sentiment & business insights; news article classification, headline & summary generation |
 | Retrieval-Augmented Generation (LangChain, Chroma/vector retriever, local LLM) | Notebooks under `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/` | Legal case similarity & clustering; Apple 10-K MD&A Q&A; Apple HBR report document Q&A |
 | Retrieval-Augmented Generation (RAG capstone) | [Natural Language Processing with Generaive AI/Medical Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) | Medical Q&A over the Merck Manuals (capstone) |
-| Tool-calling agent (SQL over SQLite) | [AI Agents for Automation/Hands-on Notebook/Hands-on Notebook - Introduction to AI Agents.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Hands-on%20Notebook/Hands-on%20Notebook%20-%20Introduction%20to%20AI%20Agents.ipynb>) | CreditX credit-card recommendations |
-| Agentic workflow (LangGraph: plan → validate → code → evaluate → execute) | [AI Agents for Automation/Case Study - CodeGen Analyst Agent/MLS_1_CodeGen_Analyst_Agent.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Case%20Study%20-%20CodeGen%20Analyst%20Agent/MLS_1_CodeGen_Analyst_Agent.ipynb>) | Used-car market data analysis (CodeGen Analyst Agent) |
+| Tool-calling agent (SQL over SQLite) | [AI Agents for Automation/Previous to the Course Update/Hands-on Notebook/Hands-on Notebook - Introduction to AI Agents.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Previous%20to%20the%20Course%20Update/Hands-on%20Notebook/Hands-on%20Notebook%20-%20Introduction%20to%20AI%20Agents.ipynb>) | CreditX credit-card recommendations |
+| Agentic workflow (LangGraph: plan → validate → code → evaluate → execute) | [AI Agents for Automation/Previous to the Course Update/Case Study - CodeGen Analyst Agent/MLS_1_CodeGen_Analyst_Agent.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Previous%20to%20the%20Course%20Update/Case%20Study%20-%20CodeGen%20Analyst%20Agent/MLS_1_CodeGen_Analyst_Agent.ipynb>) | Used-car market data analysis (CodeGen Analyst Agent) |
+| ReAct agent + memory + MCP dynamic tool discovery | [AI Agents for Automation/agentic_AI_intro.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/agentic_AI_intro.ipynb>) | Email/web-search/math tool demos, DeepWiki MCP server Q&A |
+| Multi-agent LangGraph system (RAG + rule engine + critic/revision loops) | [AI Agents for Automation/AI-powered Last-Mile Delivery Exception Handling Automation/Project_3_Full_CODE.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/AI-powered%20Last-Mile%20Delivery%20Exception%20Handling%20Automation/Project_3_Full_CODE.ipynb>) | Last-mile delivery exception triage & resolution (capstone) |
 
 ---
 
@@ -122,7 +124,7 @@ AIML/
 5. **Neural Networks** — feedforward neural networks with Keras/TensorFlow: fundamentals, optimization, and applications to tabular, multiclass, imbalanced, and audio data, culminating in the ReneWind hyperparameter-tuning capstone  
 6. **Computer Vision** — deep learning for image classification (builds on the neural network fundamentals above)  
 7. **Natural Language Processing with Generative AI** — text representation (Bag-of-Words → Word2Vec/GloVe → transformer embeddings), generative sentiment classification (T5), prompt engineering with hosted and local LLMs, Retrieval-Augmented Generation fundamentals and case studies, and a RAG capstone  
-8. **AI Agents for Automation** — tool/function-calling agents grounded in a live database, then multi-node LangGraph agentic workflows (plan → validate → code → evaluate → execute) benchmarked against an LLM-only baseline  
+8. **AI Agents for Automation** — tool/function-calling agents grounded in a live database, a ReAct agent with memory and MCP-based dynamic tool discovery, then multi-agent LangGraph systems (plan → validate → code → evaluate → execute; and guardrails → resolve → critique → communicate → finalize) benchmarked against an LLM-only baseline  
 
 ---
 
@@ -380,12 +382,14 @@ RAG-based medical Q&A assistant over the *Merck Manuals* (4,000+ page medical re
 
 ### AI Agents for Automation
 
-| Folder | Notebook | Approach | Data |
-|---|---|---|---|
-| `Hands-on Notebook/` | [Hands-on Notebook - Introduction to AI Agents.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Hands-on%20Notebook/Hands-on%20Notebook%20-%20Introduction%20to%20AI%20Agents.ipynb>) | Single-agent, tool/function-calling system for CreditX credit-card recommendations: prompt-only customer history vs. an agent that queries a SQLite database for it | `credits.db` (SQLite `credit_cards` / `customers` tables), `config.json` |
-| `Case Study - CodeGen Analyst Agent/` | [MLS_1_CodeGen_Analyst_Agent.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Case%20Study%20-%20CodeGen%20Analyst%20Agent/MLS_1_CodeGen_Analyst_Agent.ipynb>) | CodeGen Analyst Agent: LLM-only code generation baseline vs. a LangGraph planning agent (Planner → Plan Validator → Replanner → Plan-to-Code → Code Evaluation) vs. the same agent extended with a `PythonREPL` execution tool, compared across three "rigour levels" of analysis requests | `used_car_dataset.csv` |
+| Folder / notebook | Approach | Data |
+|---|---|---|
+| [`agentic_AI_intro.ipynb`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/agentic_AI_intro.ipynb>) | LangChain ReAct agent demo: dummy-email + web-search tools, multi-tool orchestration, conversational memory (`MemorySaver`), and dynamic tool discovery from a remote MCP server (DeepWiki), plus `PythonREPLTool` for reliable math | No local dataset; needs `OPENAI_API_KEY` / `OPENAI_API_BASE` |
+| [`AI-powered Last-Mile Delivery Exception Handling Automation/Project_3_Full_CODE.ipynb`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/AI-powered%20Last-Mile%20Delivery%20Exception%20Handling%20Automation/Project_3_Full_CODE.ipynb>) | Capstone: multi-agent LangGraph system (Preprocessor/Guardrails → Orchestrator → Resolution Agent → Critic → Communication Agent → Critic → Finalizer) that triages delivery exceptions using RAG over a policy playbook, a SQLite customer/locker database, and a deterministic escalation rule engine, evaluated on 10 test cases across 5 metrics | `Datasets Last-Mile Delivery.zip` (SQLite DB, CSVs, policy PDF); needs a `config.json` with `OPENAI_API_KEY` |
+| `Previous to the Course Update/Hands-on Notebook/` | [Hands-on Notebook - Introduction to AI Agents.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Previous%20to%20the%20Course%20Update/Hands-on%20Notebook/Hands-on%20Notebook%20-%20Introduction%20to%20AI%20Agents.ipynb>) | (Archived) single-agent, tool/function-calling system for CreditX credit-card recommendations: prompt-only customer history vs. an agent that queries a SQLite database for it | `credits.db` (SQLite `credit_cards` / `customers` tables), `config.json` |
+| `Previous to the Course Update/Case Study - CodeGen Analyst Agent/` | [MLS_1_CodeGen_Analyst_Agent.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Previous%20to%20the%20Course%20Update/Case%20Study%20-%20CodeGen%20Analyst%20Agent/MLS_1_CodeGen_Analyst_Agent.ipynb>) | (Archived) CodeGen Analyst Agent: LLM-only code generation baseline vs. a LangGraph planning agent (Planner → Plan Validator → Replanner → Plan-to-Code → Code Evaluation) vs. the same agent extended with a `PythonREPL` execution tool, compared across three "rigour levels" of analysis requests | `used_car_dataset.csv` |
 
-**Note:** the Hands-on notebook needs a real OpenAI key in its `config.json` — the committed file only holds a placeholder. See [AI Agents for Automation/README.md](<AI%20Agents%20for%20Automation/README.md>) for the full write-up.
+**Note:** the archived Hands-on notebook needs a real OpenAI key in its `config.json` — the committed file only holds a placeholder; the Last-Mile Delivery notebook needs its own `config.json` created locally (not committed) and its dataset zip extracted. See [AI Agents for Automation/README.md](<AI%20Agents%20for%20Automation/README.md>) for the full write-up.
 
 ---
 
@@ -432,8 +436,9 @@ Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
 | Apple 10-K MD&A excerpt (RAG hands-on) | `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Hands-On Notebook/AAPL-MDA.txt` |
 | Apple HBR report (RAG case study, PDF) | `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Case Study - Apple HBR Report Document Q&A/HBR_How_Apple_Is_Organized_For_Innovation-4.pdf` |
 | Merck Manuals medical reference (RAG source, PDF) | `Natural Language Processing with Generaive AI/Medical Assistant/medical_diagnosis_manual.pdf` |
-| CreditX credit cards & customers (SQLite) | `AI Agents for Automation/Hands-on Notebook/credits.db` |
-| Used car listings (CodeGen Analyst Agent) | `AI Agents for Automation/Case Study - CodeGen Analyst Agent/used_car_dataset.csv` |
+| CreditX credit cards & customers (SQLite) | `AI Agents for Automation/Previous to the Course Update/Hands-on Notebook/credits.db` |
+| Used car listings (CodeGen Analyst Agent) | `AI Agents for Automation/Previous to the Course Update/Case Study - CodeGen Analyst Agent/used_car_dataset.csv` |
+| Last-mile delivery logs, customers/lockers (SQLite), policy playbook (PDF) | `AI Agents for Automation/AI-powered Last-Mile Delivery Exception Handling Automation/Datasets Last-Mile Delivery.zip` (zipped — extract before running) |
 
 ---
 
@@ -489,11 +494,16 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
     ```
 13. **For the AI Agents for Automation notebooks:**
     ```bash
-    pip install langgraph langchain langchain-core langchain-openai langchain-community langchain-experimental grandalf
+    pip install langgraph langchain langchain-core langchain-openai langchain-community langchain-experimental grandalf ddgs langchain-mcp-adapters
     ```
-    The Hands-on Notebook needs a real OpenAI key in its `config.json` (the committed file only has a placeholder).
-14. Open the notebook in its folder so relative paths to CSV files resolve correctly.
-15. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
+    The archived Hands-on Notebook needs a real OpenAI key in its `config.json` (the committed file only has a placeholder); `agentic_AI_intro.ipynb` needs `OPENAI_API_KEY` / `OPENAI_API_BASE` (set up as Colab Secrets in the notebook as written).
+14. **For the Last-Mile Delivery multi-agent capstone (AI Agents for Automation):**
+    ```bash
+    pip install langchain langchain-openai langgraph langsmith langchain-community langchain-huggingface langchain-chroma langchain-text-splitters sentence-transformers pypdf
+    ```
+    Extract `Datasets Last-Mile Delivery.zip` and create a `config.json` with `OPENAI_API_KEY` (and optionally LangSmith keys for tracing) before running.
+15. Open the notebook in its folder so relative paths to CSV files resolve correctly.
+16. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
 
 ---
 
@@ -504,4 +514,5 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
 - Some notebooks reference `google.colab` imports; comment those out or skip those cells when running locally.
 - The `Natural Language Processing with Generaive AI/Medical Assistant/` RAG capstone requires a GPU runtime (Colab: T4 GPU) to run the local LLM via `llama-cpp-python`.
 - Several `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` and `Retrieval Augmented Generation/` notebooks also download and run a local LLM via `llama-cpp-python`; a GPU speeds this up but a real API key is only required for the OpenAI-based Restaurant Review Analysis notebook.
-- The `AI Agents for Automation/Case Study - CodeGen Analyst Agent/` notebook calls `gpt-4o-mini` (planning/generation) and `gpt-4o` (evaluation); both notebooks in `AI Agents for Automation/` need a real OpenAI key.
+- The archived `Case Study - CodeGen Analyst Agent/` notebook calls `gpt-4o-mini` (planning/generation) and `gpt-4o` (evaluation); every notebook under `AI Agents for Automation/` needs a real OpenAI key.
+- The Last-Mile Delivery capstone notebook (`AI Agents for Automation/AI-powered Last-Mile Delivery Exception Handling Automation/`) was solved against a project template with some pre-filled and some blank ("write the code to...") cells; its Conclusions/Business Recommendations sections are placeholders pending write-up.
