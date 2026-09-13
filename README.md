@@ -51,6 +51,7 @@ AIML/
 | **Sentence-transformers / Hugging Face `transformers` (T5)** | All notebooks under `Natural Language Processing with Generaive AI/Transformers/` |
 | **Prompt engineering (hosted LLM `gpt-4o-mini` & local LLM `llama-cpp-python`)** | All notebooks under `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` |
 | **Retrieval-Augmented Generation (RAG) — LangChain, Chroma, local LLM (`llama-cpp-python`)** | All notebooks under `Natural Language Processing with Generaive AI/Retrieval Augmented Generation/`, [Natural Language Processing with Generaive AI/Medical Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Medical%20Assistant/Full_Code_NLP_RAG_Project_Notebook_.ipynb>) |
+| **Financial news sentiment (embeddings + XGBoost, and local LLM structured extraction)** | [Natural Language Processing with Generaive AI/Stock Market News Sentiment Analysis/Additional_Project_NLP_Full_Code_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Stock%20Market%20News%20Sentiment%20Analysis/Additional_Project_NLP_Full_Code_Notebook.ipynb>) |
 | **Byte-Pair Encoding tokenization (`tiktoken`)** | [Natural Language Processing with Generaive AI/Retrieval Augmented Generation/Additional Learning Material - Understanding_Embeddings/Understanding_Embeddings.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Retrieval%20Augmented%20Generation/Additional%20Learning%20Material%20-%20Understanding_Embeddings/Understanding_Embeddings.ipynb>) |
 | **Keras Tuner (hyperparameter search for neural nets)** | [Neural Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Neural%20Networks/ReneWind/INN_ReneWind_Main_Project_FullCode_Notebook_Final.ipynb) |
 | **TensorFlow / Keras** (feedforward NN, CNN, image data) | All notebooks under `Neural Networks/`, [Pre-Work/COVID Detection/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/COVID%20Detection/AI_Application_Case_Study_COVID_Detection.ipynb), [Computer Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Computer%20Vision/Covid/AI_Application_Case_Study_COVID_Detection.ipynb) |
@@ -62,6 +63,8 @@ AIML/
 | **OpenAI API** | [Pre-Work/openai_api_demo.ipynb](https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Pre-Work/openai_api_demo.ipynb), [Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/LLM_Hands_on_Prompt_Engineering_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/LLM_Hands_on_Prompt_Engineering_Notebook.ipynb>), [.../Case Study - Restaurant Review Analysis/MLS_Restaurant_Review_Analysis_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/LLMs%20and%20Prompt%20Engineering/Case%20Study%20-%20Restaurant%20Review%20Analysis/MLS_Restaurant_Review_Analysis_Notebook.ipynb>) |
 | **Scikit-learn (general)** | Most notebooks under `Machine Learning/`, `Advanced Machine Learning/`, and applied AI notebooks in `Pre-Work/` |
 | **LangChain / LangGraph agents, tool & function calling** | All notebooks under `AI Agents for Automation/` |
+| **Multi-agent systems with LangSmith observability** | [AI Agents for Automation/Hands-on Multi-Agent Systems/rental_law_queries_resolution (4).ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Hands-on%20Multi-Agent%20Systems/rental_law_queries_resolution%20%284%29.ipynb>) |
+| **Agentic RAG over SQL + PDF policies (Chroma)** | [AI Agents for Automation/HR Employee Support Agent/MLS_Notebook_HR_Agent_Notebook (1).ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/HR%20Employee%20Support%20Agent/MLS_Notebook_HR_Agent_Notebook%20%281%29.ipynb>) |
 
 ---
 
@@ -112,6 +115,9 @@ AIML/
 | Agentic workflow (LangGraph: plan → validate → code → evaluate → execute) | [AI Agents for Automation/Previous to the Course Update/Case Study - CodeGen Analyst Agent/MLS_1_CodeGen_Analyst_Agent.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Previous%20to%20the%20Course%20Update/Case%20Study%20-%20CodeGen%20Analyst%20Agent/MLS_1_CodeGen_Analyst_Agent.ipynb>) | Used-car market data analysis (CodeGen Analyst Agent) |
 | ReAct agent + memory + MCP dynamic tool discovery | [AI Agents for Automation/agentic_AI_intro.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/agentic_AI_intro.ipynb>) | Email/web-search/math tool demos, DeepWiki MCP server Q&A |
 | Multi-agent LangGraph system (RAG + rule engine + critic/revision loops) | [AI Agents for Automation/AI-powered Last-Mile Delivery Exception Handling Automation/Project_3_Full_CODE.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/AI-powered%20Last-Mile%20Delivery%20Exception%20Handling%20Automation/Project_3_Full_CODE.ipynb>) | Last-mile delivery exception triage & resolution (capstone) |
+| Agentic RAG + SQL tool-calling agent (LangChain, Chroma) | [AI Agents for Automation/HR Employee Support Agent/MLS_Notebook_HR_Agent_Notebook (1).ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/HR%20Employee%20Support%20Agent/MLS_Notebook_HR_Agent_Notebook%20%281%29.ipynb>) | HR employee query resolution over a SQLite HR database + PDF policy docs |
+| Multi-agent LangGraph system (parsing → retrieval → validation → response, LangSmith-traced) | [AI Agents for Automation/Hands-on Multi-Agent Systems/rental_law_queries_resolution (4).ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Hands-on%20Multi-Agent%20Systems/rental_law_queries_resolution%20%284%29.ipynb>) | Tenant-landlord rental law query resolution grounded in a tenant-rights guide and prior judgments |
+| Sentence-transformer/Word2Vec embeddings + XGBoost, plus local LLM structured sentiment extraction | [Natural Language Processing with Generaive AI/Stock Market News Sentiment Analysis/Additional_Project_NLP_Full_Code_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Stock%20Market%20News%20Sentiment%20Analysis/Additional_Project_NLP_Full_Code_Notebook.ipynb>) | NASDAQ company daily news sentiment vs. stock price movement |
 
 ---
 
@@ -378,6 +384,15 @@ RAG-based medical Q&A assistant over the *Merck Manuals* (4,000+ page medical re
 
 **Note:** requires a GPU runtime (Colab: **Runtime → Change runtime type → T4 GPU**). See [Natural Language Processing with Generaive AI/README.md](<Natural%20Language%20Processing%20with%20Generaive%20AI/README.md>) for the full write-up.
 
+#### Additional case study (`Stock Market News Sentiment Analysis/`)
+
+| File | Description |
+|---|---|
+| [Additional_Project_NLP_Full_Code_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Stock%20Market%20News%20Sentiment%20Analysis/Additional_Project_NLP_Full_Code_Notebook.ipynb>) | Predicts stock price movement from daily news headlines for a NASDAQ-listed company: sentence-transformers/Word2Vec (`gensim`) document embeddings feeding an XGBoost classifier, plus a local LLM (`llama-cpp-python`) used for structured JSON sentiment extraction from each article |
+| `stock_news.csv` | Daily news text paired with that day's OHLC stock price and trade volume |
+
+**Note:** requires a GPU runtime for the local LLM step (falls back to CPU with a slower `llama-cpp-python` build if unavailable).
+
 ---
 
 ### AI Agents for Automation
@@ -386,10 +401,12 @@ RAG-based medical Q&A assistant over the *Merck Manuals* (4,000+ page medical re
 |---|---|---|
 | [`agentic_AI_intro.ipynb`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/agentic_AI_intro.ipynb>) | LangChain ReAct agent demo: dummy-email + web-search tools, multi-tool orchestration, conversational memory (`MemorySaver`), and dynamic tool discovery from a remote MCP server (DeepWiki), plus `PythonREPLTool` for reliable math | No local dataset; needs `OPENAI_API_KEY` / `OPENAI_API_BASE` |
 | [`AI-powered Last-Mile Delivery Exception Handling Automation/Project_3_Full_CODE.ipynb`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/AI-powered%20Last-Mile%20Delivery%20Exception%20Handling%20Automation/Project_3_Full_CODE.ipynb>) | Capstone: multi-agent LangGraph system (Preprocessor/Guardrails → Orchestrator → Resolution Agent → Critic → Communication Agent → Critic → Finalizer) that triages delivery exceptions using RAG over a policy playbook, a SQLite customer/locker database, and a deterministic escalation rule engine, evaluated on 10 test cases across 5 metrics | `Datasets Last-Mile Delivery.zip` (SQLite DB, CSVs, policy PDF); needs a `config.json` with `OPENAI_API_KEY` |
+| [`HR Employee Support Agent/MLS_Notebook_HR_Agent_Notebook (1).ipynb`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/HR%20Employee%20Support%20Agent/MLS_Notebook_HR_Agent_Notebook%20%281%29.ipynb>) | Agentic HR helpdesk: a LangChain tool-calling agent reasons over each employee query and decides whether to hit a SQLite HR database (employee profiles, leave balances, attendance, reimbursements), retrieve from Chroma-indexed PDF HR policies, or run calculations, then composes a grounded response; evaluated with an LLM judge on a 20-query held-out set for correctness, completeness, and guardrail compliance | `Datasets.zip` (`hr_database.db` + policy PDFs); needs a `config.json` with `OPENAI_API_KEY` / `OPENAI_API_BASE` |
+| [`Hands-on Multi-Agent Systems/rental_law_queries_resolution (4).ipynb`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Hands-on%20Multi-Agent%20Systems/rental_law_queries_resolution%20%284%29.ipynb>) | Multi-agent LangGraph system for tenant-landlord rental disputes: coordinated parsing → RAG retrieval (grounded in a tenants'-rights guide and prior judgments) → validation → response-generation agents, with escalation safeguards for insufficiently supported queries and full run tracing via LangSmith | `tenants_rights.pdf`, `previous_judgements.pdf`; needs a `config.json` with `OPENAI_API_KEY` (and optionally LangSmith tracing keys) |
 | `Previous to the Course Update/Hands-on Notebook/` | [Hands-on Notebook - Introduction to AI Agents.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Previous%20to%20the%20Course%20Update/Hands-on%20Notebook/Hands-on%20Notebook%20-%20Introduction%20to%20AI%20Agents.ipynb>) | (Archived) single-agent, tool/function-calling system for CreditX credit-card recommendations: prompt-only customer history vs. an agent that queries a SQLite database for it | `credits.db` (SQLite `credit_cards` / `customers` tables), `config.json` |
 | `Previous to the Course Update/Case Study - CodeGen Analyst Agent/` | [MLS_1_CodeGen_Analyst_Agent.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Previous%20to%20the%20Course%20Update/Case%20Study%20-%20CodeGen%20Analyst%20Agent/MLS_1_CodeGen_Analyst_Agent.ipynb>) | (Archived) CodeGen Analyst Agent: LLM-only code generation baseline vs. a LangGraph planning agent (Planner → Plan Validator → Replanner → Plan-to-Code → Code Evaluation) vs. the same agent extended with a `PythonREPL` execution tool, compared across three "rigour levels" of analysis requests | `used_car_dataset.csv` |
 
-**Note:** the archived Hands-on notebook needs a real OpenAI key in its `config.json` — the committed file only holds a placeholder; the Last-Mile Delivery notebook needs its own `config.json` created locally (not committed) and its dataset zip extracted. See [AI Agents for Automation/README.md](<AI%20Agents%20for%20Automation/README.md>) for the full write-up.
+**Note:** the archived Hands-on notebook needs a real OpenAI key in its `config.json` — the committed file only holds a placeholder; the Last-Mile Delivery, HR Employee Support Agent, and Hands-on Multi-Agent Systems notebooks each need their own `config.json` created locally (not committed), and the Last-Mile Delivery and HR Agent zipped datasets extracted. See [AI Agents for Automation/README.md](<AI%20Agents%20for%20Automation/README.md>) for the full write-up.
 
 ---
 
@@ -439,6 +456,9 @@ Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
 | CreditX credit cards & customers (SQLite) | `AI Agents for Automation/Previous to the Course Update/Hands-on Notebook/credits.db` |
 | Used car listings (CodeGen Analyst Agent) | `AI Agents for Automation/Previous to the Course Update/Case Study - CodeGen Analyst Agent/used_car_dataset.csv` |
 | Last-mile delivery logs, customers/lockers (SQLite), policy playbook (PDF) | `AI Agents for Automation/AI-powered Last-Mile Delivery Exception Handling Automation/Datasets Last-Mile Delivery.zip` (zipped — extract before running) |
+| HR employee database (SQLite) + policy PDFs (HR Employee Support Agent) | `AI Agents for Automation/HR Employee Support Agent/Datasets.zip` (zipped — extract before running) |
+| Tenants'-rights guide + prior judgments (rental law multi-agent system) | `AI Agents for Automation/Hands-on Multi-Agent Systems/tenants_rights.pdf`, `.../previous_judgements.pdf` |
+| Stock news + daily OHLC prices (sentiment analysis) | `Natural Language Processing with Generaive AI/Stock Market News Sentiment Analysis/stock_news.csv` |
 
 ---
 
@@ -502,8 +522,23 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
     pip install langchain langchain-openai langgraph langsmith langchain-community langchain-huggingface langchain-chroma langchain-text-splitters sentence-transformers pypdf
     ```
     Extract `Datasets Last-Mile Delivery.zip` and create a `config.json` with `OPENAI_API_KEY` (and optionally LangSmith keys for tracing) before running.
-15. Open the notebook in its folder so relative paths to CSV files resolve correctly.
-16. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
+15. **For the HR Employee Support Agent (AI Agents for Automation):**
+    ```bash
+    pip install langchain langchain-openai langchain-community langchain-chroma langchain-classic langchain-experimental langchain_text_splitters chromadb pypdf pandas openpyxl PyPDF2
+    ```
+    Extract `Datasets.zip` and create a `config.json` with `OPENAI_API_KEY` / `OPENAI_API_BASE` before running.
+16. **For the Hands-on Multi-Agent Systems rental law case study (AI Agents for Automation):**
+    ```bash
+    pip install openai langchain langchain-openai langchain_experimental pypdf langgraph chromadb
+    ```
+    Create a `config.json` with `OPENAI_API_KEY` (and, to enable tracing, `LANGCHAIN_TRACING_V2`, `LANGCHAIN_API_KEY`, `LANGCHAIN_PROJECT`) before running.
+17. **For the Stock Market News Sentiment Analysis case study (NLP):**
+    ```bash
+    pip install sentence-transformers gensim transformers tqdm scikit-learn xgboost llama-cpp-python huggingface_hub
+    ```
+    Uses a GPU-accelerated `llama-cpp-python` build if a GPU is available, otherwise falls back to CPU.
+18. Open the notebook in its folder so relative paths to CSV files resolve correctly.
+19. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
 
 ---
 
@@ -516,3 +551,5 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
 - Several `Natural Language Processing with Generaive AI/LLMs and Prompt Engineering/` and `Retrieval Augmented Generation/` notebooks also download and run a local LLM via `llama-cpp-python`; a GPU speeds this up but a real API key is only required for the OpenAI-based Restaurant Review Analysis notebook.
 - The archived `Case Study - CodeGen Analyst Agent/` notebook calls `gpt-4o-mini` (planning/generation) and `gpt-4o` (evaluation); every notebook under `AI Agents for Automation/` needs a real OpenAI key.
 - The Last-Mile Delivery capstone notebook (`AI Agents for Automation/AI-powered Last-Mile Delivery Exception Handling Automation/`) was solved against a project template with some pre-filled and some blank ("write the code to...") cells; its Conclusions/Business Recommendations sections are placeholders pending write-up.
+- The `HR Employee Support Agent/` and `Hands-on Multi-Agent Systems/` notebooks each require their own `config.json` (not committed) with a real `OPENAI_API_KEY`; extract `HR Employee Support Agent/Datasets.zip` before running the HR agent notebook.
+- `Hands-on Multi-Agent Systems/rental_law_queries_resolution (4).ipynb` optionally logs traces to LangSmith — set `LANGCHAIN_TRACING_V2`/`LANGCHAIN_API_KEY`/`LANGCHAIN_PROJECT` in its `config.json` to enable this.
