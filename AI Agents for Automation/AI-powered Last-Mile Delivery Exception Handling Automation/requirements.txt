@@ -1,0 +1,24 @@
+# Pinned to match Project_3_Full_CODE.ipynb install cell
+langchain==1.2.10
+langchain-openai==1.1.10
+langgraph==1.0.8
+langsmith==0.7.3
+langchain-community==0.4.1
+langchain-huggingface==1.2.0
+openai==2.21.0
+pandas
+pydantic
+langchain-chroma
+langchain-text-splitters
+pypdf
+
+# Transitive / runtime deps needed for local embeddings + Chroma
+sentence-transformers
+chromadb
+torch
+
+# Notebook / Jupyter kernel support
+ipython
+ipykernel
+jupyter
+notebook
