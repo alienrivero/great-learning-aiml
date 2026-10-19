@@ -1,6 +1,6 @@
 # Great Learning — AIML Course Materials
 
-Jupyter notebooks, datasets, and project files from the **Artificial Intelligence and Machine Learning** program. Content is organized by learning phase: pre-work, Python foundations, classical machine learning, advanced machine learning, and applied AI / computer vision.
+Jupyter notebooks, datasets, and project files from the **Artificial Intelligence and Machine Learning** program. Content is organized by learning phase: pre-work, Python foundations, classical machine learning, advanced machine learning, applied AI / computer vision, NLP and generative AI, AI agents, and model deployment.
 
 Use this README to understand what each folder contains and to quickly locate notebooks by **topic**, **algorithm**, or **library**.
 
@@ -17,7 +17,8 @@ AIML/
 ├── Neural Networks/             # Feedforward neural networks (Keras/TensorFlow): tabular, audio, imbalanced data
 ├── Computer Vision/             # Deep learning for image classification
 ├── Natural Language Processing with Generaive AI/  # Word embeddings, transformers, LLM prompt engineering, RAG, and a RAG capstone
-└── AI Agents for Automation/    # Tool-calling agents, ReAct agents with MCP, and multi-agent LangGraph systems with HITL gates and evaluation dashboards
+├── AI Agents for Automation/    # Tool-calling agents, ReAct agents with MCP, and multi-agent LangGraph systems with HITL gates and evaluation dashboards
+└── Model Deployment/            # Model serialization, Streamlit apps, Flask REST APIs, Docker, Hugging Face Spaces and GitHub Codespaces
 ```
 
 ---
@@ -67,6 +68,12 @@ AIML/
 | **Agentic RAG over SQL + PDF policies (Chroma)** | [AI Agents for Automation/HR Employee Support Agent/MLS_Notebook_HR_Agent_Notebook (1).ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/HR%20Employee%20Support%20Agent/MLS_Notebook_HR_Agent_Notebook%20%281%29.ipynb>) |
 | **Nested multi-agent (agent-as-tool) + FAISS vector search + Pydantic grounding checks** | [AI Agents for Automation/Case Study - AI Helpdesk Copilot/AI_Helpdesk_Copilot_MAS.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Case%20Study%20-%20AI%20Helpdesk%20Copilot/AI_Helpdesk_Copilot_MAS.ipynb>) |
 | **Agent evaluation & HITL quality gates (LLM-as-a-judge audit, LangSmith metrics dashboards: latency, tokens, cost, tool calls)** | [AI Agents for Automation/Rental Law Queries Resolution with Evaluation/rental_law_queries_resolution_with_evaluation.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Rental%20Law%20Queries%20Resolution%20with%20Evaluation/rental_law_queries_resolution_with_evaluation.ipynb>), [AI Agents for Automation/Case Study - AI-powered Shipment Disruption Router/AI_Powered_Shipment_Disruption_Router.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Case%20Study%20-%20AI-powered%20Shipment%20Disruption%20Router/AI_Powered_Shipment_Disruption_Router.ipynb>) |
+| **Model serialization (`joblib`)** | [Model Deployment/Case_Study_Introduction_to_Model_Deployment_Notebook/Case_Study_Introduction_to_Model_Deployment_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case_Study_Introduction_to_Model_Deployment_Notebook/Case_Study_Introduction_to_Model_Deployment_Notebook.ipynb>), [Model Deployment/Airbnb/MLS_Rental_Property_Price_Prediction_Streamlit_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Airbnb/MLS_Rental_Property_Price_Prediction_Streamlit_Notebook.ipynb>) |
+| **Streamlit web apps** | All notebooks under `Model Deployment/`; start with [Guided_Hands_on_Streamlit_GitHub_Codespaces.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Hands-on%20Deploying%20a%20Streamlit%20App%20Using%20GitHub%20Codespaces/Guided_Hands_on_Streamlit_GitHub_Codespaces.ipynb>) for the input widgets |
+| **Flask REST API (online + batch inference endpoints)** | [Model Deployment/Boston House Prediction/Containerization_Solution_Notebook_Boston_House_Prediction_V2.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Boston%20House%20Prediction/Containerization_Solution_Notebook_Boston_House_Prediction_V2.ipynb>), [Model Deployment/Case Study - REST API and Containerization/Case_Study_REST_API_and_Containerization_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case%20Study%20-%20REST%20API%20and%20Containerization/Case_Study_REST_API_and_Containerization_Notebook.ipynb>), [Model Deployment/Airbnb Rental Price Prediction/MLS2_Rental_Property_Price_Prediction_Frontend_BackendNotebook_(1).ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Airbnb%20Rental%20Price%20Prediction/MLS2_Rental_Property_Price_Prediction_Frontend_BackendNotebook_%281%29.ipynb>) |
+| **Docker (Dockerfiles for backend/frontend)** | Same three notebooks as the Flask row, plus [the introduction case study](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case_Study_Introduction_to_Model_Deployment_Notebook/Case_Study_Introduction_to_Model_Deployment_Notebook.ipynb>) |
+| **Hugging Face Spaces deployment (`huggingface_hub`)** | [Introduction to Model Deployment case study](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case_Study_Introduction_to_Model_Deployment_Notebook/Case_Study_Introduction_to_Model_Deployment_Notebook.ipynb>), [REST API and Containerization case study](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case%20Study%20-%20REST%20API%20and%20Containerization/Case_Study_REST_API_and_Containerization_Notebook.ipynb>) |
+| **GitHub Codespaces deployment (`PyGithub`)** | [Guided_Hands_on_Streamlit_GitHub_Codespaces.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Hands-on%20Deploying%20a%20Streamlit%20App%20Using%20GitHub%20Codespaces/Guided_Hands_on_Streamlit_GitHub_Codespaces.ipynb>), [Airbnb Streamlit notebook](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Airbnb/MLS_Rental_Property_Price_Prediction_Streamlit_Notebook.ipynb>), [Boston Flask + Streamlit notebook](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Boston%20House%20Prediction/Containerization_Solution_Notebook_Boston_House_Prediction_V2.ipynb>), [Airbnb Flask + Streamlit notebook](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Airbnb%20Rental%20Price%20Prediction/MLS2_Rental_Property_Price_Prediction_Frontend_BackendNotebook_%281%29.ipynb>) |
 
 ---
 
@@ -122,6 +129,10 @@ AIML/
 | Multi-agent LangGraph system (parse → dual-source RAG → response → quality audit, with pre- and post-generation HITL gates) | [AI Agents for Automation/Rental Law Queries Resolution with Evaluation/rental_law_queries_resolution_with_evaluation.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Rental%20Law%20Queries%20Resolution%20with%20Evaluation/rental_law_queries_resolution_with_evaluation.ipynb>) | Same rental-law problem as above, extended with a Response Quality Audit Agent and a LangSmith efficiency/task-completion dashboard |
 | Classifier + ReAct router agent (classify → confidence gate → policy RAG → draft → self-validate → redraft → deliver/escalate) | [AI Agents for Automation/Case Study - AI-powered Shipment Disruption Router/AI_Powered_Shipment_Disruption_Router.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/AI%20Agents%20for%20Automation/Case%20Study%20-%20AI-powered%20Shipment%20Disruption%20Router/AI_Powered_Shipment_Disruption_Router.ipynb>) | Freight shipment-disruption routing decisions (reroute / hold / expedite / monitor / escalate) for a 3PL control tower |
 | Sentence-transformer/Word2Vec embeddings + XGBoost, plus local LLM structured sentiment extraction | [Natural Language Processing with Generaive AI/Stock Market News Sentiment Analysis/Additional_Project_NLP_Full_Code_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Natural%20Language%20Processing%20with%20Generaive%20AI/Stock%20Market%20News%20Sentiment%20Analysis/Additional_Project_NLP_Full_Code_Notebook.ipynb>) | NASDAQ company daily news sentiment vs. stock price movement |
+| XGBoost classifier pipeline (GridSearchCV) + Streamlit deployment | [Model Deployment/Case_Study_Introduction_to_Model_Deployment_Notebook/Case_Study_Introduction_to_Model_Deployment_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case_Study_Introduction_to_Model_Deployment_Notebook/Case_Study_Introduction_to_Model_Deployment_Notebook.ipynb>), [Model Deployment/Hands-on Deploying a Streamlit App Using GitHub Codespaces/Guided_Hands_on_Streamlit_GitHub_Codespaces.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Hands-on%20Deploying%20a%20Streamlit%20App%20Using%20GitHub%20Codespaces/Guided_Hands_on_Streamlit_GitHub_Codespaces.ipynb>) | Bank customer churn; telecom customer churn |
+| Random Forest vs XGBoost regressor (GridSearchCV) + Streamlit deployment | [Model Deployment/Airbnb/MLS_Rental_Property_Price_Prediction_Streamlit_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Airbnb/MLS_Rental_Property_Price_Prediction_Streamlit_Notebook.ipynb>) | Airbnb rental price (`log_price`) |
+| Serialized model behind Flask API + Streamlit frontend (Docker) | [Boston House Prediction](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Boston%20House%20Prediction/Containerization_Solution_Notebook_Boston_House_Prediction_V2.ipynb>), [REST API and Containerization](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case%20Study%20-%20REST%20API%20and%20Containerization/Case_Study_REST_API_and_Containerization_Notebook.ipynb>), [Airbnb Rental Price Prediction](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Airbnb%20Rental%20Price%20Prediction/MLS2_Rental_Property_Price_Prediction_Frontend_BackendNotebook_%281%29.ipynb>) | Boston house prices; bank churn; Airbnb rental price |
+| Decision tree / bagging / RF / boosting / XGBoost regressors + Flask/Streamlit deployment (project template) | [Model Deployment/SuperKart/Full_Code_SuperKart_Model_Deployment_Notebook.ipynb](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/SuperKart/Full_Code_SuperKart_Model_Deployment_Notebook.ipynb>) | SuperKart product–store sales forecasting |
 
 ---
 
@@ -135,6 +146,7 @@ AIML/
 6. **Computer Vision** — deep learning for image classification (builds on the neural network fundamentals above)  
 7. **Natural Language Processing with Generative AI** — text representation (Bag-of-Words → Word2Vec/GloVe → transformer embeddings), generative sentiment classification (T5), prompt engineering with hosted and local LLMs, Retrieval-Augmented Generation fundamentals and case studies, and a RAG capstone  
 8. **AI Agents for Automation** — tool/function-calling agents grounded in a live database, a ReAct agent with memory and MCP-based dynamic tool discovery, then multi-agent LangGraph systems (plan → validate → code → evaluate → execute; guardrails → resolve → critique → communicate → finalize; and classify → route → self-validate → deliver/escalate) benchmarked against an LLM-only baseline, with human-in-the-loop quality gates and LangSmith evaluation dashboards  
+9. **Model Deployment** — serialize a trained pipeline with `joblib`, serve it through a Streamlit app, then split it into a Flask REST API backend (online + batch inference) and a Streamlit frontend, containerize both with Docker, and host them on Hugging Face Spaces or GitHub Codespaces; ends with the SuperKart sales-forecasting project  
 
 ---
 
@@ -417,6 +429,22 @@ RAG-based medical Q&A assistant over the *Merck Manuals* (4,000+ page medical re
 
 ---
 
+### Model Deployment
+
+| Folder / notebook | Approach | Data |
+|---|---|---|
+| [`Case_Study_Introduction_to_Model_Deployment_Notebook/`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case_Study_Introduction_to_Model_Deployment_Notebook/Case_Study_Introduction_to_Model_Deployment_Notebook.ipynb>) | EDA, `XGBClassifier` pipeline tuned with `GridSearchCV`, `joblib` serialization, Streamlit app + `requirements.txt` + `Dockerfile`, uploaded to a Hugging Face Space | `bank_customer_churn.csv` (10,000 customers) |
+| [`Hands-on Deploying a Streamlit App Using GitHub Codespaces/`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Hands-on%20Deploying%20a%20Streamlit%20App%20Using%20GitHub%20Codespaces/Guided_Hands_on_Streamlit_GitHub_Codespaces.ipynb>) | Same single-app workflow; deployment files pushed to a new GitHub repo with `PyGithub` and run in GitHub Codespaces (PDF guides + `instructions.md`) | `customer_churn_data.csv` (telecom churn) |
+| [`Airbnb/`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Airbnb/MLS_Rental_Property_Price_Prediction_Streamlit_Notebook.ipynb>) | Regression: `RandomForestRegressor` vs `XGBRegressor` with `GridSearchCV` (R², MAE, RMSE, MAPE), serialized best model, Streamlit app on GitHub Codespaces | `Airbnb.csv` (~74K listings, target `log_price`) |
+| [`Boston House Prediction/`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Boston%20House%20Prediction/Containerization_Solution_Notebook_Boston_House_Prediction_V2.ipynb>) | Flask backend (`/v1/house`, `/v1/housebatch`) + Streamlit frontend, each with a `Dockerfile`, pushed to GitHub; online and batch inference | `boston.csv`; `boston_housing_model_v1_0.joblib` must be supplied from an earlier notebook |
+| [`Case Study - REST API and Containerization/`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Case%20Study%20-%20REST%20API%20and%20Containerization/Case_Study_REST_API_and_Containerization_Notebook.ipynb>) | Churn model served by Flask (`/v1/customer`, `/v1/customerbatch`) + Streamlit frontend, both deployed as Hugging Face Docker Spaces | `bank_customer_churn.csv`, `churn_prediction_model_v1_0.joblib` |
+| [`Airbnb Rental Price Prediction/`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/Airbnb%20Rental%20Price%20Prediction/MLS2_Rental_Property_Price_Prediction_Frontend_BackendNotebook_%281%29.ipynb>) | Saved Airbnb model behind Flask (`/v1/rental`, `/v1/rentalbatch`) + Streamlit frontend, both containers run in a GitHub Codespace | `rental_price_prediction_model_v1_0.joblib`, `airbnb_rental_batch_data.csv` (14 listings) |
+| [`SuperKart/`](<https://colab.research.google.com/github/alienrivero/great-learning-aiml/blob/main/Model%20Deployment/SuperKart/Full_Code_SuperKart_Model_Deployment_Notebook.ipynb>) | Graded project (due 26 Oct 2026, 60 marks): sales-forecast regression (DT / bagging / RF / AdaBoost / GBM / XGBoost) with tuning, serialization, Flask backend, Streamlit frontend, and online + batch inference; notebook is the unsolved full-code template | `SuperKart.csv` (~8.7K product–store rows), `Batch_Data_SuperKart.csv`; brief in `problem-statement.md`, grading in `rubric.md` |
+
+**Note:** Hugging Face Docker Spaces moved to a paid plan on July 8 2026, so the GitHub Codespaces notebooks are the free alternative. See [Model Deployment/README.md](<Model%20Deployment/README.md>) for the full write-up.
+
+---
+
 ## Datasets at a glance
 
 Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
@@ -468,6 +496,11 @@ Most notebooks ship with a local CSV (or multiple CSVs). Notable datasets:
 | Customer support tickets (AI Helpdesk Copilot knowledge base) | `AI Agents for Automation/Case Study - AI Helpdesk Copilot/ticket_data.csv` |
 | Logistics policy rulebook + curated disruption test cases (Shipment Disruption Router) | `AI Agents for Automation/Case Study - AI-powered Shipment Disruption Router/Data.zip` (zipped — extract `logistics_policy_rulebook.txt` and `test_cases_curated.csv` into the notebook folder) |
 | Stock news + daily OHLC prices (sentiment analysis) | `Natural Language Processing with Generaive AI/Stock Market News Sentiment Analysis/stock_news.csv` |
+| Bank customer churn (model deployment) | `Model Deployment/Case_Study_Introduction_to_Model_Deployment_Notebook/bank_customer_churn.csv` (also in `Model Deployment/Case Study - REST API and Containerization/`) |
+| Telecom customer churn (Streamlit on Codespaces) | `Model Deployment/Hands-on Deploying a Streamlit App Using GitHub Codespaces/customer_churn_data.csv` |
+| Airbnb listings (rental price) | `Model Deployment/Airbnb/Airbnb.csv`; batch-inference sample in `Model Deployment/Airbnb Rental Price Prediction/airbnb_rental_batch_data.csv` |
+| Boston housing (containerization) | `Model Deployment/Boston House Prediction/boston.csv` |
+| SuperKart product–store sales | `Model Deployment/SuperKart/SuperKart.csv`, `Model Deployment/SuperKart/Batch_Data_SuperKart.csv` |
 
 ---
 
@@ -560,8 +593,13 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
     pip install sentence-transformers gensim transformers tqdm scikit-learn xgboost llama-cpp-python huggingface_hub
     ```
     Uses a GPU-accelerated `llama-cpp-python` build if a GPU is available, otherwise falls back to CPU.
-20. Open the notebook in its folder so relative paths to CSV files resolve correctly.
-21. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
+20. **For the Model Deployment notebooks:**
+    ```bash
+    pip install pandas==2.2.2 numpy==2.0.2 scikit-learn==1.6.1 xgboost==2.1.4 joblib==1.4.2 streamlit==1.43.2 flask requests PyGithub==2.6.1 huggingface_hub
+    ```
+    The GitHub Codespaces notebooks read a GitHub Personal Access Token from Colab Secrets; the Hugging Face notebooks need an HF token and a Docker Space. Fill in the `<user_name>` / `<space_name>` / secret-name placeholders before running.
+21. Open the notebook in its folder so relative paths to CSV files resolve correctly.
+22. Run cells **sequentially** from top to bottom unless the notebook says otherwise.
 
 ---
 
@@ -579,3 +617,5 @@ Click any notebook link in this README to open it directly in [Google Colab](htt
 - `Rental Law Queries Resolution with Evaluation/` and `Case Study - AI-powered Shipment Disruption Router/` each ship a `config.json` containing placeholder values only — put real keys in before running. Their LangSmith dashboard sections are not optional extras: they query the LangSmith project for completed run traces, so they need valid LangSmith credentials and at least one traced run.
 - Both new agent notebooks split work across two models — `gpt-4o-mini` for generation/routing and `gpt-4o` for validation and LLM-as-a-judge scoring — so an API key with access to both is needed.
 - The Shipment Disruption Router notebook's Conclusions/Business Recommendations are written up (100% task completion, 80% decision accuracy, ~13.8s average latency over 5 curated test cases); the Rental Law with Evaluation notebook ends with a Limitations and Remedies section flagging indirect prompt injection via retrieved chunks and clarification responses as the main open risk.
+- `Model Deployment/` notebooks write their deployment files (`app.py`, `requirements.txt`, `Dockerfile`) with `%%writefile` cells and push them to GitHub or Hugging Face, so the deployed apps live outside this repo. Keep the backend's scikit-learn/XGBoost versions identical to the ones used for training, or the `.joblib` model will not load. `Model Deployment/SuperKart/` holds the unsolved project template (due 26 Oct 2026).
+- The extracted `Datasets Last-Mile Delivery/` folder under `AI Agents for Automation/AI-powered Last-Mile Delivery Exception Handling Automation/` is git-ignored; only the zip is tracked.
